@@ -1,6 +1,6 @@
 
         <div class="site-wrap">
-            <div class="site-blocks-cover" style="background-image: url('assets/images/hero_1.jpg');" data-aos="fade">
+            <div class="site-blocks-cover" style="background-image: url('assets/images/Iphone.png');" data-aos="fade">
                 <div class="container">
                     <div class="row align-items-start align-items-md-center justify-content-end">
                         <div class="col-md-5 text-center text-md-left pt-5 pt-md-0">
@@ -52,30 +52,30 @@
 
             <div class="site-section site-blocks-2">
                 <div class="container">
-                    <div class="row">
+                     <div class="d-flex justify-content-center">
                         <div class="col-sm-6 col-md-6 col-lg-4 mb-4 mb-lg-0" data-aos="fade" data-aos-delay="">
                             <a class="block-2-item" href="#">
                                 <figure class="image">
-                                    <img src="<?php echo base_url() ?>assets/images/women.jpg" alt="" class="img-fluid">
+                                    <img src="<?php echo base_url() ?>assets/images/iphone13.png" alt="" class="img-fluid">
                                 </figure>
                                 <div class="text">
                                     <span class="text-uppercase">Collections</span>
-                                    <h3>Women</h3>
+                                    <h3>iPhone</h3>
                                 </div>
                             </a>
                         </div>
                         <div class="col-sm-6 col-md-6 col-lg-4 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="100">
                             <a class="block-2-item" href="#">
                                 <figure class="image">
-                                    <img src="<?php echo base_url() ?>assets/images/children.jpg" alt="" class="img-fluid">
+                                    <img src="<?php echo base_url() ?>assets/images/mac.png" alt="" class="img-fluid">
                                 </figure>
                                 <div class="text">
                                     <span class="text-uppercase">Collections</span>
-                                    <h3>Children</h3>
+                                    <h3>MacBook</h3>
                                 </div>
                             </a>
                         </div>
-                        <div class="col-sm-6 col-md-6 col-lg-4 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="200">
+                        <!-- <div class="col-sm-6 col-md-6 col-lg-4 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="200">
                             <a class="block-2-item" href="#">
                                 <figure class="image">
                                     <img src="<?php echo base_url() ?>assets/images/men.jpg" alt="" class="img-fluid">
@@ -85,7 +85,7 @@
                                     <h3>Men</h3>
                                 </div>
                             </a>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
