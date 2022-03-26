@@ -52,7 +52,7 @@
 
             <div class="site-section site-blocks-2">
                 <div class="container">
-                     <div class="d-flex justify-content-center">
+                    <div class="d-flex justify-content-center">
                         <div class="col-sm-6 col-md-6 col-lg-4 mb-4 mb-lg-0" data-aos="fade" data-aos-delay="">
                             <a class="block-2-item" href="#">
                                 <figure class="image">
@@ -180,7 +180,7 @@
                     </div>
                     <div class="row align-items-center">
                         <div class="col-md-12 col-lg-7 mb-5">
-                            <a href="#"><img src="<?php echo base_url() ?>assets/images/blog_1.jpg" alt="Image placeholder"
+                            <a href="#"><img src="<?php echo base_url() ?>assets/images/iphone_all.jpg" alt="Image placeholder"
                                     class="img-fluid rounded"></a>
                         </div>
                         <div class="col-md-12 col-lg-5 text-center pl-md-5">
