@@ -31,21 +31,22 @@
                 </div>
             </div>
             <div class="col-md-6 col-lg-6 mb-4 mb-lg-0">
-                <h3 class="footer-heading mb-4">Promo</h3>
+                <h3 class="footer-heading mb-4">Lokasi</h3>
                 <a href="#" class="block-6">
-                    <img src="<?= base_url('assets/'); ?>images/hero_1.jpg" alt="Image placeholder"
-                        class="img-fluid rounded mb-4">
-                    <h3 class="font-weight-light  mb-0">Finding Your Perfect Shoes</h3>
-                    <p>Promo from nuary 15 &mdash; 25, 2019</p>
+                    <div class="col-lg-6">
+                        <div class="map-responsive">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.8500366907942!2d106.6807243634529!3d-6.150832559682254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f863364b5971%3A0x4d23608dac551199!2sJl.%20Yos%20Sudarso%20No.46%2C%20RT.003%2FRW.005%2C%20Jurumudi%20Baru%2C%20Benda%2C%20Kota%20Tangerang%2C%20Banten%2015124!5e0!3m2!1sen!2sid!4v1637946233574!5m2!1sen!2sid" width="470" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                    </div>
                 </a>
             </div>
             <div class="col-md-6 col-lg-3">
                 <div class="block-5 mb-5">
                     <h3 class="footer-heading mb-4">Contact Info</h3>
                     <ul class="list-unstyled">
-                        <li class="address">203 Fake St. Mountain View, San Francisco, California, USA</li>
-                        <li class="phone"><a href="tel://23923929210">+2 392 3929 210</a></li>
-                        <li class="email">emailaddress@domain.com</li>
+                        <li class="address">Jl. Raya Meruya Selatan 1, Kembangan, DKI Jakarta</li>
+                        <li class="phone"><a href="tel://23923929210">021-5840815</a></li>
+                        <li class="email">ngeappleaja@gmail.com</li>
                     </ul>
                 </div>
 
@@ -64,13 +65,10 @@
             <div class="col-md-12">
                 <p>
                     <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                    Copyright &copy;<script data-cfasync="false"
-                        src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+                    Copyright &copy;<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
                     <script>
-                    document.write(new Date().getFullYear());
-                    </script> All rights reserved | This template is made with <i class="icon-heart"
-                        aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank"
-                        class="text-primary">Colorlib</a>
+                        document.write(new Date().getFullYear());
+                    </script> All rights reserved | <a href="https://fasilkom.mercubuana.ac.id/" target="_blank" class="text-primary">Team ngeApple</a>
                     <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                 </p>
             </div>

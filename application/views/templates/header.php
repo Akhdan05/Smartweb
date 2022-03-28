@@ -2,7 +2,8 @@
 <html lang="en">
 
 <head>
-    <title>Shoppers &mdash; Colorlib e-Commerce Template</title>
+    <title>ngeApple</title>
+    <!-- <title>ngeApple &mdash; </title> -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -12,13 +13,14 @@
     <link rel="stylesheet" href="<?php echo base_url() ?>assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="<?php echo base_url() ?>assets/css/magnific-popup.css">
     <link rel="stylesheet" href="<?php echo base_url() ?>assets/css/jquery-ui.css">
-    <link rel="stylesheet" href="<?php echo base_url() ?>assets/acss/owl.carousel.min.css">
+    <link rel="stylesheet" href="<?php echo base_url() ?>assets/css/owl.carousel.min.css">
     <link rel="stylesheet" href="<?php echo base_url() ?>assets/css/owl.theme.default.min.css">
 
 
     <link rel="stylesheet" href="<?php echo base_url() ?>assets/css/aos.css">
 
     <link rel="stylesheet" href="<?php echo base_url() ?>assets/css/style.css">
+    <link rel="icon" href="<?php echo base_url() ?>assets/images/aaa.png" type="image/png">
 
 </head>
 
@@ -39,7 +41,7 @@
 
                         <div class="col-12 mb-3 mb-md-0 col-md-4 order-1 order-md-2 text-center">
                             <div class="site-logo">
-                                <a href="<?php echo base_url() ?>Dashboard" class="js-logo-clone">Gadget Shop</a>
+                                <a href="<?php echo base_url() ?>Dashboard" class="js-logo-clone">ngeApple</a>
                             </div>
                         </div>
 
@@ -74,8 +76,8 @@
                                 <li><a href="#">Mac</a></li>
                             </ul>
                         </li>
-                        <li><a href="<?php echo base_url(); ?>assets/about.html">About</a></li>
-                        <li><a href="<?php echo base_url(); ?>assets/shop.html">Shop</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="<?php echo base_url('index.php/Shop'); ?>">Shop</a></li>
                         <li><a href="#">Catalogue</a></li>
                         <li><a href="#">New Arrivals</a></li>
                         <li><a href="contact.html">Contact</a></li>
