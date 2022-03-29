@@ -55,7 +55,7 @@
                                                 placeholder="No. Telepon">
                                         </div>
                                         <a href="Dashboard" class="btn btn-primary btn-user btn-block">
-                                            Submit
+                                            Login
                                         </a>
                                     </form>
 
