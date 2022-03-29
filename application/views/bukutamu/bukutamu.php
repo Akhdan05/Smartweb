@@ -54,9 +54,9 @@
                                                 id="exampleInputTelepon" aria-describedby="teleponHelp"
                                                 placeholder="No. Telepon">
                                         </div>
-                                        <button type="submit" class="btn btn-primary btn-user btn-block">
-                                            Submit
-                                        </button>
+                                        <a href="Dashboard" class="btn btn-primary btn-user btn-block">
+                                            Login
+                                        </a>
                                     </form>
 
                                 </div>
