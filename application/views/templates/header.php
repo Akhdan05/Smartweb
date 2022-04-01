@@ -32,12 +32,12 @@
                 <div class="container">
                     <div class="row align-items-center">
 
-                        <div class="col-6 col-md-4 order-2 order-md-1 site-search-icon text-left">
+                        <!-- <div class="col-6 col-md-4 order-2 order-md-1 site-search-icon text-left">
                             <form action="" class="site-block-top-search">
                                 <span class="icon icon-search2"></span>
                                 <input type="text" class="form-control border-0" placeholder="Search">
                             </form>
-                        </div>
+                        </div> -->
 
                         <div class="col-12 mb-3 mb-md-0 col-md-4 order-1 order-md-2 text-center">
                             <div class="site-logo">
@@ -45,7 +45,7 @@
                             </div>
                         </div>
 
-                        <div class="col-6 col-md-4 order-3 order-md-3 text-right">
+                        <!-- <div class="col-6 col-md-4 order-3 order-md-3 text-right">
                             <div class="site-top-icons">
                                 <ul>
                                     <li><a href="#"><span class="icon icon-person"></span></a></li>
@@ -61,7 +61,7 @@
                                     </li>
                                 </ul>
                             </div>
-                        </div>
+                        </div> -->
 
                     </div>
                 </div>
@@ -77,7 +77,13 @@
                             </ul>
                         </li>
                         <li><a href="#about">About</a></li>
-                        <li><a href="<?php echo base_url('index.php/Shop'); ?>">Shop</a></li>
+                        <li class="has-children">
+                            <a href="<?php echo base_url('index.php/Shop'); ?>" class="js-logo-clone">Shop</a>
+                            <ul class="dropdown">
+                                <li><a href="#">Iphone</a></li>
+                                <li><a href="#">Mac</a></li>
+                            </ul>
+                        </li>
                         <li><a href="#">Catalogue</a></li>
                         <li><a href="#">New Arrivals</a></li>
                         <li><a href="contact.html">Contact</a></li>
