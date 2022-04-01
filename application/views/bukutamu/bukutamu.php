@@ -40,25 +40,22 @@
                                     <div class="text-center">
                                         <h1 class="h4 text-gray-900 mb-4">Harap isi buku tamu dulu yaa</h1>
                                     </div>
-                                    <form class="user">
+                                    <form class="user" method="post" action="<?php echo site_url('pengunjung/insert_submit/');?>">
                                         <div class="form-group">
                                             <input type="text" class="form-control form-control-user" id="nama"
-                                                name="nama" placeholder="Nama Lengkap">
+                                                name="nama" value="" required="" placeholder="Nama Lengkap">
                                         </div>
                                         <div class="form-group">
-                                            <input type="text" class="form-control form-control-user" id="email"
-                                                name="email" placeholder="Enter Email Address...">
+                                            <input type="email" class="form-control form-control-user" id="email"
+                                                name="email_pengunjung" value="" required="" placeholder="Enter Email Address...">
                                         </div>
                                         <div class="form-group">
                                             <input type="telepon" class="form-control form-control-user"
-                                                id="exampleInputTelepon" aria-describedby="teleponHelp"
-                                                placeholder="No. Telepon">
+                                                id="exampleInputTelepon" aria-describedby="teleponHelp" 
+                                                name="no_telp" value="" required="" placeholder="No. Telepon">
                                         </div>
-                                        <a href="Dashboard" class="btn btn-primary btn-user btn-block">
-                                            Login
-                                        </a>
+                                        <input class="btn btn-primary btn-user btn-block" type="submit" name="Login" value="Login"/>
                                     </form>
-
                                 </div>
                             </div>
                         </div>

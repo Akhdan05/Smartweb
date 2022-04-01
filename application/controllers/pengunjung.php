@@ -70,7 +70,7 @@ class pengunjung extends CI_Controller {
 		$data_pengunjung = $this->pengunjung_model->insert($input);
 		
 		//mengembalikan halaman ke function read
-		redirect('pengunjung/read');
+		redirect('dashboard');
 	} 
 
 	public function update() {

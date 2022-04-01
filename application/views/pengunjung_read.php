@@ -1,5 +1,3 @@
-<!--link tambah data-->
-<a href="<?php echo site_url('pengunjung/insert');?>" class="btn btn-primary">Tambah</a>
 <br /><br />
 
 <table class="table table-striped" id="datatables">
