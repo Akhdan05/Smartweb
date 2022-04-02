@@ -33,12 +33,6 @@ class pengunjung_model extends CI_Model {
         return $query->row_array();
 	} 
 
-	//function insert berfungsi menyimpan/create data ke table pengunjung di database
-	public function insert($input) {
-		//$input = data yang dikirim dari controller
-		return $this->db->insert('pengunjung', $input);
-	}
-
 	//function update berfungsi merubah data ke table pengunjung di database
 	public function update($input, $id) {
 		//$id = id data yang dikirim dari controller (sebagai filter data yang diubah)

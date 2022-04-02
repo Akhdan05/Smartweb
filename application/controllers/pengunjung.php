@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class pengunjung extends CI_Controller {
+class Pengunjung extends CI_Controller {
  
 	public function __construct() {
         parent::__construct();
@@ -32,46 +32,12 @@ class pengunjung extends CI_Controller {
 						//data pengunjung dikirim ke view
 						'data_pengunjung' => $data_pengunjung,
 
-						'theme_page' => 'pengunjung_read',
+						'theme_page' => 'admin/pengunjung/index',
 					);
 
 		//memanggil file view
 		$this->load->view('theme/index', $output);
 	}
-
-	public function insert() {
-		//mengirim data ke view
-		$output = array(
-						//memanggil view
-						'list' => 'Tambah pengunjung',
-
-						'theme_page' => 'pengunjung_insert',
-					);
-		//memanggil file view
-		$this->load->view('theme/index', $output);
-	}
-
-	public function insert_submit() {
-		//menangkap data input dari view
-		$nama = $this->input->post('nama');
-		$email_pengunjung = $this->input->post('email_pengunjung');
-		$no_telp = $this->input->post('no_telp');
-
-		//mengirim data ke model
-		$input = array(
-						//format : nama field/kolom table => data input dari view
-						'nama' => $nama,
-						'email_pengunjung' => $email_pengunjung,
-						'no_telp' => $no_telp
-					);
-		
-		//memanggil function insert pada pengunjung model
-		//function insert berfungsi menyimpan/create data ke table pengunjung di database
-		$data_pengunjung = $this->pengunjung_model->insert($input);
-		
-		//mengembalikan halaman ke function read
-		redirect('dashboard');
-	} 
 
 	public function update() {
 		//menangkap id data yg dipilih dari view (parameter get)
@@ -87,7 +53,7 @@ class pengunjung extends CI_Controller {
 						//mengirim data pengunjung yang dipilih ke view
 						'data_pengunjung_single' => $data_pengunjung_single,
 
-						'theme_page' => 'pengunjung_update',
+						'theme_page' => 'admin/pengunjung/update',
 					);
 
 		//memanggil file view
@@ -164,6 +130,6 @@ class pengunjung extends CI_Controller {
 						'data_pengunjung' => $data_pengunjung
 					);
 
-		$this->load->view('pengunjung_data_export', $output);
+		$this->load->view('admin/pengunjung/export', $output);
 	}
 }

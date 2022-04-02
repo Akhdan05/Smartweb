@@ -5,7 +5,7 @@ class admin extends CI_Controller {
 
 	public function __construct() {
         parent::__construct();
-
+		
         //memanggil model
         $this->load->model(array('admin_model'));
     }
@@ -13,6 +13,16 @@ class admin extends CI_Controller {
 	public function index() {
 		//mengarahkan ke function read
 		$this->login();
+	}
+
+	public function dashboard() {
+
+		$output = array(
+			'list' => 'Dashboard',
+
+			'theme_page' => 'admin/dashboard/index',
+		);
+		$this->load->view('theme/index', $output);
 	}
 
     public function read() {
@@ -27,7 +37,7 @@ class admin extends CI_Controller {
 						//data admin dikirim ke view
 						'data_admin' => $data_admin,
 
-						'theme_page' => 'admin_read',
+						'theme_page' => 'admin/user/index',
 					);
 
 		//memanggil file view
@@ -40,7 +50,7 @@ class admin extends CI_Controller {
 						//memanggil view
 						'list' => 'Tambah admin',
 
-						'theme_page' => 'admin_insert',
+						'theme_page' => 'admin/user/add',
 					);
 
 		//memanggil file view
@@ -57,7 +67,7 @@ class admin extends CI_Controller {
             
             $output = array(
                 'list' => 'Tambah admin',
-                'theme_page' => 'admin_insert',
+                'theme_page' => 'admin/user/add',
             );
     
             $this->load->view('theme/index', $output);
@@ -98,7 +108,7 @@ class admin extends CI_Controller {
 						//mengirim data admin yang dipilih ke view
 						'data_admin_single_data' => $data_admin_single_data,
 
-						'theme_page' => 'admin_update',
+						'theme_page' => 'admin/user/update',
 					);
 
 		//memanggil file view
@@ -152,7 +162,7 @@ class admin extends CI_Controller {
 						//mengirim data admin yang dipilih ke view
 						'data_admin_single_data' => $data_admin_single_data,
 
-						'theme_page' => 'admin_reset',
+						'theme_page' => 'admin/user/reset',
 					);
 
 		//memanggil file view
@@ -175,7 +185,7 @@ class admin extends CI_Controller {
 
 				'data_admin_single_data' => $data_admin_single_data,
 
-                'theme_page' => 'admin_reset',
+                'theme_page' => 'admin/user/reset',
             );
     
             $this->load->view('theme/index', $output);
@@ -236,7 +246,7 @@ class admin extends CI_Controller {
 					);
 
 		//memanggil file view
-		$this->load->view('admin_data_export', $output);
+		$this->load->view('admin/user/export', $output);
 	}
 
 	public function login() {
@@ -250,7 +260,7 @@ class admin extends CI_Controller {
 					);
 
 		//memanggil file view
-		$this->load->view('login', $output);
+		$this->load->view('auth/login', $output);
 	}
 
 	private function login_submit() {
@@ -266,7 +276,7 @@ class admin extends CI_Controller {
 			if ($this->form_validation->run() == TRUE) {
 
 				//redirect ke provinsi (bisa dirubah ke controller & fungsi manapun)
-				redirect('admin/read');
+				redirect('admin/dashboard');
 			} 
 
 		}
