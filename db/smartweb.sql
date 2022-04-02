@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.2
+-- version 5.0.4
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 31 Mar 2022 pada 08.16
--- Versi server: 10.4.14-MariaDB
--- Versi PHP: 7.4.9
+-- Generation Time: Apr 02, 2022 at 04:14 PM
+-- Server version: 10.4.17-MariaDB
+-- PHP Version: 7.4.15
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -24,7 +24,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `admin`
+-- Table structure for table `admin`
 --
 
 CREATE TABLE `admin` (
@@ -35,75 +35,77 @@ CREATE TABLE `admin` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data untuk tabel `admin`
+-- Dumping data for table `admin`
 --
 
 INSERT INTO `admin` (`id`, `username`, `password`, `nama`) VALUES
 (2, 'akhdan', '81dc9bdb52d04dc20036dbd8313ed055', 'Akhdan Rafid Fadhila'),
 (6, 'frida', '81dc9bdb52d04dc20036dbd8313ed055', 'Frida Eka Wardani'),
 (9, 'abel', '81dc9bdb52d04dc20036dbd8313ed055', 'Raychal Ababil'),
-(10, 'iqbal', '81dc9bdb52d04dc20036dbd8313ed055', 'Muhammad Iqbal Yusril');
+(10, 'iqbal', '81dc9bdb52d04dc20036dbd8313ed055', 'Muhammad Iqbal Yusril'),
+(13, 'admin', '81dc9bdb52d04dc20036dbd8313ed055', 'admin');
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `pengunjung`
+-- Table structure for table `pengunjung`
 --
 
 CREATE TABLE `pengunjung` (
   `id` int(10) NOT NULL,
   `nama` varchar(50) NOT NULL,
   `email_pengunjung` varchar(50) NOT NULL,
-  `no_telp` varchar(12) NOT NULL
+  `no_telp` varchar(12) NOT NULL,
+  `create_at` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data untuk tabel `pengunjung`
+-- Dumping data for table `pengunjung`
 --
 
-INSERT INTO `pengunjung` (`id`, `nama`, `email_pengunjung`, `no_telp`) VALUES
-(1, 'Zahra', 'zahrakha05@gmail.com', '081123123123'),
-(2, 'Syahfira Angela', 'angelsfra@gmail.com', '081234567890'),
-(3, 'Gracia', 'greshan@gmail.com', '081231131232'),
-(4, 'Mikey', 'mikeykun@gmail.com', '081213123123'),
-(5, 'Midoriya', 'dekudesu@gmail.com', '083231413221'),
-(6, 'Adan', 'dans@gmail.com', '083432411321'),
-(7, 'Rafa', 'Fa@gmail.com', '083412313123'),
-(8, 'Zee', 'zee@gmail.com', '083244245123'),
-(9, 'brielle', 'biyel@gmail.com', '082436264161'),
-(10, 'Akaza', 'moon@gmail.com', '083246414313');
+INSERT INTO `pengunjung` (`id`, `nama`, `email_pengunjung`, `no_telp`, `create_at`) VALUES
+(1, 'Zahra', 'zahrakha05@gmail.com', '081123123123', '2022-04-02 12:09:14'),
+(2, 'Syahfira Angela', 'angelsfra@gmail.com', '081234567890', '2022-04-02 12:09:14'),
+(3, 'Gracia', 'greshan@gmail.com', '081231131232', '2022-04-02 12:09:14'),
+(4, 'Mikey', 'mikeykun@gmail.com', '081213123123', '2022-04-02 12:09:14'),
+(5, 'Midoriya', 'dekudesu@gmail.com', '083231413221', '2022-04-02 12:09:14'),
+(6, 'Adan', 'dans@gmail.com', '083432411321', '2022-04-02 12:09:14'),
+(7, 'Rafa', 'Fa@gmail.com', '083412313123', '2022-04-02 12:09:14'),
+(8, 'Zee', 'zee@gmail.com', '083244245123', '2022-04-02 12:09:14'),
+(9, 'brielle', 'biyel@gmail.com', '082436264161', '2022-04-02 12:09:14'),
+(10, 'Akaza', 'moon@gmail.com', '083246414313', '2022-04-02 12:09:14');
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indeks untuk tabel `admin`
+-- Indexes for table `admin`
 --
 ALTER TABLE `admin`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indeks untuk tabel `pengunjung`
+-- Indexes for table `pengunjung`
 --
 ALTER TABLE `pengunjung`
   ADD PRIMARY KEY (`id`);
 
 --
--- AUTO_INCREMENT untuk tabel yang dibuang
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT untuk tabel `admin`
+-- AUTO_INCREMENT for table `admin`
 --
 ALTER TABLE `admin`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
--- AUTO_INCREMENT untuk tabel `pengunjung`
+-- AUTO_INCREMENT for table `pengunjung`
 --
 ALTER TABLE `pengunjung`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
