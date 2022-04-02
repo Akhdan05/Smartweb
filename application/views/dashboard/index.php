@@ -98,7 +98,8 @@
                         <div class="item">
                             <div class="block-4 text-center">
                                 <figure class="block-4-image">
-                                    <img src="<?php echo base_url() ?>assets/images/cloth_1.jpg" alt="Image placeholder" class="img-fluid">
+                                    <img src="<?php echo base_url() ?>assets/images/cloth_1.jpg" alt="Image placeholder"
+                                        class="img-fluid">
                                 </figure>
                                 <div class="block-4-text p-4">
                                     <h3><a href="#">Tank Top</a></h3>
@@ -110,7 +111,8 @@
                         <div class="item">
                             <div class="block-4 text-center">
                                 <figure class="block-4-image">
-                                    <img src="<?php echo base_url() ?>assets/images/shoe_1.jpg" alt="Image placeholder" class="img-fluid">
+                                    <img src="<?php echo base_url() ?>assets/images/shoe_1.jpg" alt="Image placeholder"
+                                        class="img-fluid">
                                 </figure>
                                 <div class="block-4-text p-4">
                                     <h3><a href="#">Corater</a></h3>
@@ -122,7 +124,8 @@
                         <div class="item">
                             <div class="block-4 text-center">
                                 <figure class="block-4-image">
-                                    <img src="<?php echo base_url() ?>assets/images/cloth_2.jpg" alt="Image placeholder" class="img-fluid">
+                                    <img src="<?php echo base_url() ?>assets/images/cloth_2.jpg" alt="Image placeholder"
+                                        class="img-fluid">
                                 </figure>
                                 <div class="block-4-text p-4">
                                     <h3><a href="#">Polo Shirt</a></h3>
@@ -134,7 +137,8 @@
                         <div class="item">
                             <div class="block-4 text-center">
                                 <figure class="block-4-image">
-                                    <img src="<?php echo base_url() ?>assets/images/cloth_3.jpg" alt="Image placeholder" class="img-fluid">
+                                    <img src="<?php echo base_url() ?>assets/images/cloth_3.jpg" alt="Image placeholder"
+                                        class="img-fluid">
                                 </figure>
                                 <div class="block-4-text p-4">
                                     <h3><a href="#">T-Shirt Mockup</a></h3>
@@ -146,7 +150,8 @@
                         <div class="item">
                             <div class="block-4 text-center">
                                 <figure class="block-4-image">
-                                    <img src="<?php echo base_url() ?>assets/images/shoe_1.jpg" alt="Image placeholder" class="img-fluid">
+                                    <img src="<?php echo base_url() ?>assets/images/shoe_1.jpg" alt="Image placeholder"
+                                        class="img-fluid">
                                 </figure>
                                 <div class="block-4-text p-4">
                                     <h3><a href="#">Corater</a></h3>
@@ -171,11 +176,13 @@
                 </div>
                 <div class="row align-items-center">
                     <div class="col-md-12 col-lg-7 mb-5">
-                        <a href="#"><img src="<?php echo base_url() ?>assets/images/iphone_all.jpg" alt="Image placeholder" class="img-fluid rounded"></a>
+                        <a href="#"><img src="<?php echo base_url() ?>assets/images/iphone_all.jpg"
+                                alt="Image placeholder" class="img-fluid rounded"></a>
                     </div>
                     <div class="col-md-12 col-lg-5 text-center pl-md-5">
                         <h2><a href="#">50% less in all items</a></h2>
-                        <p class="post-meta mb-4">By <a href="#">Carl Smith</a> <span class="block-8-sep">&bullet;</span>
+                        <p class="post-meta mb-4">By <a href="#">Carl Smith</a> <span
+                                class="block-8-sep">&bullet;</span>
                             September 3, 2018</p>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam iste dolor accusantium
                             facere
@@ -192,10 +199,8 @@
             <div class="row mb-5">
                 <div class="col-md-6">
                     <div class="block-16">
-                        <figure>
-                            <img src="images/blog_1.jpg" alt="Image placeholder" class="img-fluid rounded">
-                            <a href="https://vimeo.com/channels/staffpicks/93951774" class="play-button popup-vimeo"><span class="ion-md-play"></span></a>
-                        </figure>
+                        <a href="#"><img src="<?php echo base_url() ?>assets/images/team.png" alt="Image placeholder"
+                                class="img-fluid rounded"></a>
                     </div>
                 </div>
                 <div class="col-md-1"></div>
@@ -227,15 +232,12 @@
                     <div class="block-38 text-center">
                         <div class="block-38-img">
                             <div class="block-38-header">
-                                <img src="<?php echo base_url() ?>assets/images/akhdan.png" alt="Image placeholder" class="mb-4">
+                                <img src="<?php echo base_url() ?>assets/images/akhdan.png" alt="Image placeholder"
+                                    class="mb-4">
                                 <h3 class="block-38-heading h4">Akhdan Rafid Fadhila</h3>
                                 <h3 class="block-38-heading h4">41519010078</h3>
                                 <p class="block-38-subheading">CEO/Co-Founder</p>
                             </div>
-                            <div class="block-38-body">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae aut minima nihil sit
-                                    distinctio recusandae doloribus ut fugit officia voluptate soluta. </p>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -243,15 +245,12 @@
                     <div class="block-38 text-center">
                         <div class="block-38-img">
                             <div class="block-38-header">
-                                <img src="<?php echo base_url() ?>assets/images/frida.png" alt="Image placeholder" class="mb-4">
+                                <img src="<?php echo base_url() ?>assets/images/frida.png" alt="Image placeholder"
+                                    class="mb-4">
                                 <h3 class="block-38-heading h4">Frida Eka Wardani</h3>
                                 <h3 class="block-38-heading h4">41519010063</h3>
                                 <p class="block-38-subheading">Frontend Developer</p>
                             </div>
-                            <div class="block-38-body">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae aut minima nihil sit
-                                    distinctio recusandae doloribus ut fugit officia voluptate soluta. </p>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -259,15 +258,12 @@
                     <div class="block-38 text-center">
                         <div class="block-38-img">
                             <div class="block-38-header">
-                                <img src="<?php echo base_url() ?>assets/images/iqbal.png" alt="Image placeholder" class="mb-4">
+                                <img src="<?php echo base_url() ?>assets/images/iqbal.png" alt="Image placeholder"
+                                    class="mb-4">
                                 <h3 class="block-38-heading h4">Muhammad Iqbal Yusril</h3>
                                 <h3 class="block-38-heading h4">41519010106</h3>
                                 <p class="block-38-subheading">System Analyst</p>
                             </div>
-                            <div class="block-38-body">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae aut minima nihil sit
-                                    distinctio recusandae doloribus ut fugit officia voluptate soluta. </p>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -275,14 +271,11 @@
                     <div class="block-38 text-center">
                         <div class="block-38-img">
                             <div class="block-38-header">
-                                <img src="<?php echo base_url() ?>assets/images/abel.jpg" alt="Image placeholder" class="mb-4">
+                                <img src="<?php echo base_url() ?>assets/images/abel.jpg" alt="Image placeholder"
+                                    class="mb-4">
                                 <h3 class="block-38-heading h4">Raychal A. Wiradiputra</h3>
                                 <h3 class="block-38-heading h4">41519010159</h3>
                                 <p class="block-38-subheading">Backend Developer</p>
-                            </div>
-                            <div class="block-38-body">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae aut minima nihil sit
-                                    distinctio recusandae doloribus ut fugit officia voluptate soluta. </p>
                             </div>
                         </div>
                     </div>

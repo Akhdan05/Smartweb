@@ -32,7 +32,7 @@
                 <div class="container">
                     <div class="row align-items-center">
 
-                        <!-- <div class="col-6 col-md-4 order-2 order-md-1 site-search-icon text-left">
+                        <!-- <div class="col-6 col-md-4 order-2 order-md-1 site-search-icon ">
                             <form action="" class="site-block-top-search">
                                 <span class="icon icon-search2"></span>
                                 <input type="text" class="form-control border-0" placeholder="Search">
@@ -69,12 +69,8 @@
             <nav class="site-navigation text-right text-md-center" role="navigation">
                 <div class="container">
                     <ul class="site-menu js-clone-nav d-none d-md-block">
-                        <li class="has-children active">
+                        <li class="">
                             <a href="<?php echo base_url() ?>Dashboard" class="js-logo-clone">Home</a>
-                            <ul class="dropdown">
-                                <li><a href="#">Iphone</a></li>
-                                <li><a href="#">Mac</a></li>
-                            </ul>
                         </li>
                         <li><a href="#about">About</a></li>
                         <li class="has-children">
@@ -84,9 +80,8 @@
                                 <li><a href="#">Mac</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">Catalogue</a></li>
-                        <li><a href="#">New Arrivals</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="<?php echo base_url('index.php/tamu'); ?>" class="js-logo-clone">Buku Tamu</a></li>
+                        <li><a href="#">Manual Book</a></li>
                     </ul>
                 </div>
             </nav>
