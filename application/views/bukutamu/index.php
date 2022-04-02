@@ -41,7 +41,7 @@
                                         <h1 class="h4 text-gray-900 mb-4">Harap isi buku tamu dulu yaa</h1>
                                     </div>
                                     <form class="user" method="post"
-                                        action="<?php echo site_url('pengunjung/insert_submit/'); ?>">
+                                        action="<?php echo site_url('buku_tamu/submit'); ?>">
                                         <div class="form-group">
                                             <input type="text" class="form-control form-control-user" id="nama"
                                                 name="nama" value="" required="" placeholder="Nama Lengkap">
@@ -56,7 +56,7 @@
                                                 id="exampleInputTelepon" aria-describedby="teleponHelp" name="no_telp"
                                                 value="" required="" placeholder="No. Telepon">
                                         </div>
-                                        <input class="btn btn-primary btn-user btn-block" type="submit" name="Login"
+                                        <input class="btn btn-primary btn-user btn-block" type="submit" name="Submit"
                                             value="Submit" />
                                     </form>
                                 </div>
