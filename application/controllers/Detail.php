@@ -1,20 +1,20 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
-class dashboard extends CI_Controller
+class Detail extends CI_Controller
 {
+
 
     public function index()
     {
         $this->read();
     }
 
-    public function read() {
-
+    public function read(){
         $output = array(
-			'list' => 'Dashboard',
+			'list' => 'Detail',
 
-			'theme_page' => 'dashboard/index',
+			'theme_page' => 'Shop/Detail',
 		);
 		$this->load->view('templates/index', $output);
     }
