@@ -7,8 +7,15 @@ class Shop extends CI_Controller
 
     public function index()
     {
-        $this->load->view('templates/header');
-        $this->load->view('Shop/Shop');
-        $this->load->view('templates/footer');
+        $this->read();
+    }
+
+    public function read(){
+        $output = array(
+			'list' => 'Shop',
+
+			'theme_page' => 'Shop/index',
+		);
+		$this->load->view('templates/index', $output);
     }
 }
