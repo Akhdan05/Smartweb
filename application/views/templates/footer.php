@@ -10,8 +10,6 @@
                         <ul class="list-unstyled">
                             <li><a href="#">Sell online</a></li>
                             <li><a href="#">Features</a></li>
-                            <!-- <li><a href="#">Shopping cart</a></li>
-                            <li><a href="#">Store builder</a></li> -->
                         </ul>
                     </div>
                 </div>
@@ -42,14 +40,12 @@
         <div class="row pt-5 mt-5 text-center">
             <div class="col-md-12">
                 <p>
-                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                     Copyright &copy;<script data-cfasync="false"
                         src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
                     <script>
                     document.write(new Date().getFullYear());
                     </script> All rights reserved | <a href="https://fasilkom.mercubuana.ac.id/" target="_blank"
                         class="text-primary">Team ngeApple</a>
-                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                 </p>
             </div>
 

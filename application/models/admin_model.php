@@ -84,7 +84,8 @@ class admin_model extends CI_Model {
 
 	function jml_iphone()
 	{
-		$query = $this->db->get('iphone');
+		$query = $this->db->get('produk');
+		$this->db->where('id_produk', 1);
 		if ($query->num_rows() > 0) {
 			return $query->num_rows();
 		} else {
@@ -94,7 +95,8 @@ class admin_model extends CI_Model {
 
 	function jml_macbook()
 	{
-		$query = $this->db->get('macbook');
+		$query = $this->db->get('produk');
+		$this->db->where('id_produk', 2);
 		if ($query->num_rows() > 0) {
 			return $query->num_rows();
 		} else {
