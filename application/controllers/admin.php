@@ -17,8 +17,18 @@ class admin extends CI_Controller {
 
 	public function dashboard() {
 
+		$data_pengunjung = $this->admin_model->jml_pengunjung();
+		$data_iphone = $this->admin_model->jml_iphone();
+		$data_macbook = $this->admin_model->jml_macbook();
+
 		$output = array(
 			'list' => 'Dashboard',
+
+			'data_pengunjung' => $data_pengunjung,
+
+			'data_iphone' => $data_iphone,
+
+			'data_macbook' => $data_macbook,
 
 			'theme_page' => 'admin/dashboard/index',
 		);
