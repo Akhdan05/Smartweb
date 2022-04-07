@@ -71,4 +71,34 @@ class admin_model extends CI_Model {
 		$this->db->where('id', $id);
 		return $this->db->delete('admin');
 	}
+
+	function jml_pengunjung()
+	{
+		$query = $this->db->get('pengunjung');
+		if ($query->num_rows() > 0) {
+			return $query->num_rows();
+		} else {
+			return 0;
+		}
+	}
+
+	function jml_iphone()
+	{
+		$query = $this->db->get('iphone');
+		if ($query->num_rows() > 0) {
+			return $query->num_rows();
+		} else {
+			return 0;
+		}
+	}
+
+	function jml_macbook()
+	{
+		$query = $this->db->get('macbook');
+		if ($query->num_rows() > 0) {
+			return $query->num_rows();
+		} else {
+			return 0;
+		}
+	}
 }
