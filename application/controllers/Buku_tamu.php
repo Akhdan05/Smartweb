@@ -6,7 +6,7 @@ class buku_tamu extends CI_Controller
 
     public function __construct() {
         parent::__construct();
-        $this->load->model('bukutamu_model');
+        $this->load->model('pengunjung_model');
     }
 
     public function index()
@@ -24,8 +24,14 @@ class buku_tamu extends CI_Controller
 						'email_pengunjung' => $email_pengunjung,
 						'no_telp' => $no_telp
 					);
+		$notif = [
+			'judul' => ' ' . $this->input->post('nama') . ' Telah Berkunjung ',
+			'pesan' => 'nama ' . $this->input->post('nama') . ' Berkunjung pada ' . date('D, d-M-Y, H:i', $input['create_at']) . '.',
+			'is_read' => 0
+		];
 		
-		$data_pengunjung = $this->bukutamu_model->insert($input);
+		$data_pengunjung = $this->pengunjung_model->insert($input);
+		$data_notif_pengunjung = $this->pengunjung_model->insert_notif($notif);
 		
 		redirect('dashboard');
 	}

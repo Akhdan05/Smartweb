@@ -1,7 +1,5 @@
 <!DOCTYPE HTML>
 <html>
-  <body class="hold-transition skin-red-light sidebar-mini fixed">  
-    <div class="content-wrapper">
       <section class="content-header">
         <h2>
             Selamat Datang, <?= $this->session->userdata('nama') ?>
@@ -9,7 +7,6 @@
       </section>
       <!-- Main content -->
       <br>
-      <section class="content">
         <!-- SELECT2 EXAMPLE -->
         <div class="row">
           <div class="col-lg-3 col-6">
@@ -39,7 +36,7 @@
             </div>
           </div>
           <!-- ./col -->
-          <div class="col-lg-3 col-6"></div>
+          <div class="col-lg-3 col-6">
             <!-- small box -->
             <div class="small-box bg-success">
               <div class="inner">
@@ -54,11 +51,6 @@
           <!-- ./col -->
         </div>
         <!-- /.row -->
-      </section>
-    </div>
-      <!-- <div id="chartContainer" style="height: 370px; width: 100%;"></div>
-      <script src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
-      <script src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script> -->
     <div class="container mt-3">
       <div class="row">
         <div class="col-md-3">
@@ -125,5 +117,4 @@
       })
     }
   </script>	
-</body>
 </html>

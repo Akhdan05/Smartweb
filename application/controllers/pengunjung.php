@@ -1,45 +1,72 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') or exit('No direct script access allowed');
 
-class Pengunjung extends CI_Controller {
- 
-	public function __construct() {
-        parent::__construct();
- 
+class Pengunjung extends CI_Controller
+{
+
+	public function __construct()
+	{
+		parent::__construct();
+
 		//memanggil model
-        $this->load->model('pengunjung_model');
+		$this->load->model('pengunjung_model');
 
-		if(empty($this->session->userdata('id'))) {
-        	redirect('admin/login');
+		if (empty($this->session->userdata('id'))) {
+			redirect('admin/login');
 		}
-    }
+	}
 
-	public function index() {
+	public function index()
+	{
 		//mengarahkan ke function read
 		$this->read();
 	}
- 
-	public function read() {
+
+	public function read()
+	{
 		//memanggil function read pada pengunjung model
 		//function read berfungsi mengambil/read data dari table pengunjung di database
 		$data_pengunjung = $this->pengunjung_model->read();
+		$data_notif = $this->pengunjung_model->read_notif();
 
 		//mengirim data ke view
 		$output = array(
-						//memanggil view
-						'list' => 'Daftar pengunjung',
+			//memanggil view
+			'list' => 'Daftar pengunjung',
 
-						//data pengunjung dikirim ke view
-						'data_pengunjung' => $data_pengunjung,
+			//data pengunjung dikirim ke view
+			'data_pengunjung' => $data_pengunjung,
 
-						'theme_page' => 'admin/pengunjung/index',
-					);
+			'data_notif' => $data_notif,
+
+			'theme_page' => 'admin/pengunjung/index',
+		);
 
 		//memanggil file view
 		$this->load->view('theme/index', $output);
 	}
 
-	public function update() {
+	// public function is_read($data_notif)
+	// {
+	// 	$data_notif = [
+	// 		'is_read' => 1
+	// 	];
+	// 	$this->pengunjung_model->update_notif();
+	// 	$output = array(
+	// 		//memanggil view
+	// 		'list' => 'Daftar pengunjung',
+
+	// 		'data_notif' => $data_notif,
+
+	// 		'theme_page' => 'admin/pengunjung/index',
+	// 	);
+
+	// 	//memanggil file view
+	// 	$this->load->view('theme/index', $output);
+	// }
+
+	public function update()
+	{
 		//menangkap id data yg dipilih dari view (parameter get)
 		$id = $this->uri->segment(3);
 
@@ -48,19 +75,20 @@ class Pengunjung extends CI_Controller {
 
 		//mengirim data ke view
 		$output = array(
-						'list' => 'Ubah pengunjung',
+			'list' => 'Ubah pengunjung',
 
-						//mengirim data pengunjung yang dipilih ke view
-						'data_pengunjung_single' => $data_pengunjung_single,
+			//mengirim data pengunjung yang dipilih ke view
+			'data_pengunjung_single' => $data_pengunjung_single,
 
-						'theme_page' => 'admin/pengunjung/update',
-					);
+			'theme_page' => 'admin/pengunjung/update',
+		);
 
 		//memanggil file view
 		$this->load->view('theme/index', $output);
 	}
 
-	public function update_submit() {
+	public function update_submit()
+	{
 		//menangkap id data yg dipilih dari view
 		$id = $this->uri->segment(3);
 
@@ -72,12 +100,12 @@ class Pengunjung extends CI_Controller {
 
 		//mengirim data ke model
 		$input = array(
-						//format : nama field/kolom table => data input dari view
-						'nama' => $nama,
-						// 'instansi' => $instansi,
-						'email_pengunjung' => $email_pengunjung,
-						'no_telp' => $no_telp,
-					);
+			//format : nama field/kolom table => data input dari view
+			'nama' => $nama,
+			// 'instansi' => $instansi,
+			'email_pengunjung' => $email_pengunjung,
+			'no_telp' => $no_telp,
+		);
 
 		//memanggil function insert pada pengunjung model
 		//function insert berfungsi menyimpan/create data ke table pengunjung di database
@@ -87,7 +115,8 @@ class Pengunjung extends CI_Controller {
 		redirect('pengunjung/read');
 	}
 
-	public function delete() {
+	public function delete()
+	{
 		//menangkap id data yg dipilih dari view
 		$id = $this->uri->segment(3);
 
@@ -98,37 +127,39 @@ class Pengunjung extends CI_Controller {
 		redirect('pengunjung/read');
 	}
 
-	public function read_export() {
+	public function read_export()
+	{
 		//memanggil function read pada pengunjung model
 		//function read berfungsi mengambil/read data dari table pengunjung di database
 		$data_pengunjung = $this->pengunjung_model->read();
-	
+
 		//mengirim data ke view
 		$output = array(
-						//memanggil view
-						'list' => 'Daftar pengunjung',
+			//memanggil view
+			'list' => 'Daftar pengunjung',
 
-						//data pengunjung dikirim ke view
-						'data_pengunjung' => $data_pengunjung
-					);
+			//data pengunjung dikirim ke view
+			'data_pengunjung' => $data_pengunjung
+		);
 
 		//memanggil file view
 		$this->load->view('pengunjung_read_export', $output);
 	}
 
-	public function data_export() {
+	public function data_export()
+	{
 		//memanggil function read pada pengunjung model
 		//function read berfungsi mengambil/read data dari table pengunjung di database
 		$data_pengunjung = $this->pengunjung_model->read();
-	
+
 		//mengirim data ke view
 		$output = array(
-						//memanggil view
-						'list' => 'Daftar pengunjung',
+			//memanggil view
+			'list' => 'Daftar pengunjung',
 
-						//data pengunjung dikirim ke view
-						'data_pengunjung' => $data_pengunjung
-					);
+			//data pengunjung dikirim ke view
+			'data_pengunjung' => $data_pengunjung
+		);
 
 		$this->load->view('admin/pengunjung/export', $output);
 	}
