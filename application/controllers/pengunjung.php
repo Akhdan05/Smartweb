@@ -28,6 +28,8 @@ class Pengunjung extends CI_Controller
 		//function read berfungsi mengambil/read data dari table pengunjung di database
 		$data_pengunjung = $this->pengunjung_model->read();
 		$data_notif = $this->pengunjung_model->read_notif();
+		$count_notif = $this->pengunjung_model->count_notif();
+		$count = count($count_notif);
 
 		//mengirim data ke view
 		$output = array(
@@ -38,6 +40,10 @@ class Pengunjung extends CI_Controller
 			'data_pengunjung' => $data_pengunjung,
 
 			'data_notif' => $data_notif,
+
+			'count_notif' => $count_notif,
+
+			'count' => $count,
 
 			'theme_page' => 'admin/pengunjung/index',
 		);

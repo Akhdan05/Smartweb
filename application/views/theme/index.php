@@ -88,6 +88,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
     <script src="https://cdn.datatables.net/buttons/1.5.6/js/buttons.html5.min.js"></script>
     <script src="https://cdn.datatables.net/buttons/1.5.6/js/buttons.print.min.js"></script>
+          <!-- Page level plugins -->
+    <script src="assets-admin/vendor/chart.js/Chart.min.js"></script>
+
+    <!-- Page level custom scripts -->
+    <script src="assets-admin/js/demo/chart-area-demo.js"></script>
+    <script src="assets-admin/js/demo/chart-pie-demo.js"></script>
+    <script src="assets-admin/js/demo/chart-bar-demo.js"></script>
     <script type="text/javascript">
         $(document).ready(function() {
             let tgl_acara = $('#acara_id option:selected').attr('tanggal_acara');

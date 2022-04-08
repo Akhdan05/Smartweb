@@ -59,6 +59,14 @@ class pengunjung_model extends CI_Model
 		return $query->result_array();
 	}
 
+		public function count_notif()
+	{
+		$query = $this->db->get('notif');
+		$this->db->where('is_read', 0);
+		//$query->result_array = mengirim data ke controller dalam bentuk semua data
+		return $query->result_array();
+	}
+
 	// public function update_notif($id, $data_notif)
 	// {
 
