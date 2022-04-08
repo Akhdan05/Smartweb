@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.2
+-- version 5.0.4
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 07 Apr 2022 pada 11.36
--- Versi server: 10.4.11-MariaDB
--- Versi PHP: 7.4.6
+-- Generation Time: Apr 08, 2022 at 02:24 AM
+-- Server version: 10.4.17-MariaDB
+-- PHP Version: 7.4.15
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -24,7 +24,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `admin`
+-- Table structure for table `admin`
 --
 
 CREATE TABLE `admin` (
@@ -35,7 +35,7 @@ CREATE TABLE `admin` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data untuk tabel `admin`
+-- Dumping data for table `admin`
 --
 
 INSERT INTO `admin` (`id`, `username`, `password`, `nama`) VALUES
@@ -47,7 +47,7 @@ INSERT INTO `admin` (`id`, `username`, `password`, `nama`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `kategori`
+-- Table structure for table `kategori`
 --
 
 CREATE TABLE `kategori` (
@@ -56,7 +56,7 @@ CREATE TABLE `kategori` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data untuk tabel `kategori`
+-- Dumping data for table `kategori`
 --
 
 INSERT INTO `kategori` (`id`, `nama`) VALUES
@@ -66,7 +66,29 @@ INSERT INTO `kategori` (`id`, `nama`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `pengunjung`
+-- Table structure for table `notif`
+--
+
+CREATE TABLE `notif` (
+  `id` int(11) NOT NULL,
+  `judul` varchar(128) NOT NULL,
+  `pesan` text NOT NULL,
+  `is_read` int(1) NOT NULL,
+  `create_at` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `notif`
+--
+
+INSERT INTO `notif` (`id`, `judul`, `pesan`, `is_read`, `create_at`) VALUES
+(1, 'Pengunjung', 'nama Raychal Ababil Wiradiputra Berkunjung pada Thu, 01-Jan-1970, 01:00.', 0, '2022-04-07 16:54:51'),
+(2, ' Raychal Ababil Wiradiputra Telah Berkunjung ', 'nama Raychal Ababil Wiradiputra Berkunjung pada Thu, 01-Jan-1970, 01:00.', 0, '2022-04-07 17:02:11');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `pengunjung`
 --
 
 CREATE TABLE `pengunjung` (
@@ -78,7 +100,7 @@ CREATE TABLE `pengunjung` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data untuk tabel `pengunjung`
+-- Dumping data for table `pengunjung`
 --
 
 INSERT INTO `pengunjung` (`id`, `nama`, `email_pengunjung`, `no_telp`, `create_at`) VALUES
@@ -102,12 +124,15 @@ INSERT INTO `pengunjung` (`id`, `nama`, `email_pengunjung`, `no_telp`, `create_a
 (30, 'Raychal Ababil Wiradiputra', 'Abelrawz@gmail.com', '081280468902', '2022-04-07 09:26:30'),
 (31, 'Raychal Ababil Wiradiputra', 'Abelrawz@gmail.com', '081280468902', '2022-04-07 09:26:30'),
 (32, 'Raychal Ababil Wiradiputra', 'Abelrawz@gmail.com', '081280468902', '2022-04-07 09:26:30'),
-(33, 'Raychal Ababil Wiradiputra', 'Abelrawz@gmail.com', '081280468902', '2022-04-07 09:26:30');
+(33, 'Raychal Ababil Wiradiputra', 'Abelrawz@gmail.com', '081280468902', '2022-04-07 09:26:30'),
+(34, 'Raychal Ababil Wiradiputra', 'Abelrawz@gmail.com', '081280468902', '2022-04-07 15:41:27'),
+(35, 'Raychal Ababil Wiradiputra', 'Abelrawz@gmail.com', '081280468902', '2022-04-07 15:57:06'),
+(36, 'Raychal Ababil Wiradiputra', 'Abelrawz@gmail.com', '081280468902', '2022-04-07 17:02:11');
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `produk`
+-- Table structure for table `produk`
 --
 
 CREATE TABLE `produk` (
@@ -124,7 +149,7 @@ CREATE TABLE `produk` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data untuk tabel `produk`
+-- Dumping data for table `produk`
 --
 
 INSERT INTO `produk` (`id`, `id_produk`, `web-scraper-order`, `web-scraper-start-url`, `produk-href`, `nama`, `harga`, `ulasan`, `deskripsi`, `img-src`) VALUES
@@ -291,44 +316,56 @@ INSERT INTO `produk` (`id`, `id_produk`, `web-scraper-order`, `web-scraper-start
 --
 
 --
--- Indeks untuk tabel `admin`
+-- Indexes for table `admin`
 --
 ALTER TABLE `admin`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indeks untuk tabel `kategori`
+-- Indexes for table `kategori`
 --
 ALTER TABLE `kategori`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indeks untuk tabel `pengunjung`
+-- Indexes for table `notif`
+--
+ALTER TABLE `notif`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `pengunjung`
 --
 ALTER TABLE `pengunjung`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indeks untuk tabel `produk`
+-- Indexes for table `produk`
 --
 ALTER TABLE `produk`
   ADD PRIMARY KEY (`id`);
 
 --
--- AUTO_INCREMENT untuk tabel yang dibuang
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT untuk tabel `admin`
+-- AUTO_INCREMENT for table `admin`
 --
 ALTER TABLE `admin`
   MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
--- AUTO_INCREMENT untuk tabel `pengunjung`
+-- AUTO_INCREMENT for table `notif`
+--
+ALTER TABLE `notif`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- AUTO_INCREMENT for table `pengunjung`
 --
 ALTER TABLE `pengunjung`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=34;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=37;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
