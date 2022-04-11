@@ -25,8 +25,6 @@ class Pengunjung extends CI_Controller
 
 	public function read()
 	{
-		//memanggil function read pada pengunjung model
-		//function read berfungsi mengambil/read data dari table pengunjung di database
 		$data_pengunjung = $this->pengunjung_model->read();
 		$data_notif = $this->notif_model->read();
 		$notif = $this->notif_model->count();
@@ -53,25 +51,6 @@ class Pengunjung extends CI_Controller
 		$this->load->view('theme/index', $output);
 	}
 
-	// public function is_read($data_notif)
-	// {
-	// 	$data_notif = [
-	// 		'is_read' => 1
-	// 	];
-	// 	$this->pengunjung_model->update_notif();
-	// 	$output = array(
-	// 		//memanggil view
-	// 		'list' => 'Daftar pengunjung',
-
-	// 		'data_notif' => $data_notif,
-
-	// 		'theme_page' => 'admin/pengunjung/index',
-	// 	);
-
-	// 	//memanggil file view
-	// 	$this->load->view('theme/index', $output);
-	// }
-
 	public function update()
 	{
 		//menangkap id data yg dipilih dari view (parameter get)
@@ -88,7 +67,7 @@ class Pengunjung extends CI_Controller
 
 			//mengirim data pengunjung yang dipilih ke view
 			'data_pengunjung_single' => $data_pengunjung_single,
-			
+
 			'notif' => $notif,
 
 			'count' => $count,
