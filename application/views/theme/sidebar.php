@@ -32,6 +32,12 @@
             <span>Pengunjung</span></a>
     </li>
 
+    <li class="nav-item">
+        <a style="transition: all 0.9s;" class="nav-link" href="<?php echo site_url('Notification/read'); ?>">
+            <i class="fas fa-bell"></i>
+            <span>Notification</span></a>
+    </li>
+
     <hr class="sidebar-divider d-none d-md-block">
 
     <div class="text-center d-none d-md-inline">

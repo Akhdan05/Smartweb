@@ -17,24 +17,26 @@
       <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         <i class="fas fa-bell fa-fw"></i>
         <!-- Counter - Alerts -->
-        <span class="badge badge-danger badge-counter" id="notif">1+</span>
+        <span class="badge badge-danger badge-counter" id="notif"><?= $count; ?></span>
       </a>
       <!-- Dropdown - Alerts -->
       <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="alertsDropdown">
         <h6 class="dropdown-header">
           Updates
         </h6>
-        <a class="dropdown-item d-flex align-items-center" href="#">
+        <?php foreach($notif as $data): ?>
+        <a class="dropdown-item d-flex align-items-center" href="<?= base_url('notification/index') ?>">
           <div class="mr-3">
             <div class="icon-circle bg-success">
               <i class="fas fa-info text-white"></i>
             </div>
           </div>
           <div>
-            <div class="small text-gray-700" id="tanggal">1 Maret 2019</div>
-            <span class="font-weight-bold" id="pesan">Notif message</span>
+            <div class="small text-gray-700" id="tanggal"><?= $data['create_at']; ?></div>
+            <span class="font-weight-bold" id="pesan"><?= $data['judul']; ?></span>
           </div>
         </a>
+           <?php endforeach; ?>
         <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
       </div>
     </li>

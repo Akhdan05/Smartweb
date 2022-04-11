@@ -22,11 +22,12 @@ class buku_tamu extends CI_Controller
 		$input = array(
 						'nama' => $nama,
 						'email_pengunjung' => $email_pengunjung,
-						'no_telp' => $no_telp
+						'no_telp' => $no_telp,
+						'create_at' => time()
 					);
 		$notif = [
 			'judul' => ' ' . $this->input->post('nama') . ' Telah Berkunjung ',
-			'pesan' => 'nama ' . $this->input->post('nama') . ' Berkunjung pada ' . date('D, d-M-Y, H:i', $input['create_at']) . '.',
+			'pesan' => 'Nama ' . $this->input->post('nama') . ' Berkunjung pada ' . date('D, d-M-Y, H:i', $input['create_at']) . '.',
 			'is_read' => 0
 		];
 		
