@@ -8,6 +8,7 @@ class admin extends CI_Controller {
 		
         //memanggil model
         $this->load->model(array('admin_model'));
+		$this->load->model(array('notif_model'));
     }
 
 	public function index() {
@@ -20,9 +21,15 @@ class admin extends CI_Controller {
 		$data_pengunjung = $this->admin_model->jml_pengunjung();
 		$data_iphone = $this->admin_model->jml_iphone();
 		$data_macbook = $this->admin_model->jml_macbook();
+		$notif = $this->notif_model->count();
+		$count = count($notif);
 
 		$output = array(
 			'list' => 'Dashboard',
+
+			'count' => $count,
+
+			'notif' => $notif,
 
 			'data_pengunjung' => $data_pengunjung,
 
@@ -39,13 +46,18 @@ class admin extends CI_Controller {
 		//memanggil function read pada admin model
 		//function read berfungsi mengambil/read data dari table admin di database
 		$data_admin = $this->admin_model->read();
+		$notif = $this->notif_model->count();
+		$count = count($notif);
 
 		//mengirim data ke view
 		$output = array(
 						'list' => 'Daftar admin',
-
 						//data admin dikirim ke view
 						'data_admin' => $data_admin,
+
+						'notif' => $notif,
+
+						'count' => $count,
 
 						'theme_page' => 'admin/user/index',
 					);
@@ -55,10 +67,16 @@ class admin extends CI_Controller {
 	}
 
     public function insert() {
+		$notif = $this->notif_model->count();
+		$count = count($notif);
 		//mengirim data ke view
 		$output = array(
 						//memanggil view
 						'list' => 'Tambah admin',
+						
+						'notif' => $notif,
+
+						'count' => $count,
 
 						'theme_page' => 'admin/user/add',
 					);
@@ -107,6 +125,8 @@ class admin extends CI_Controller {
 	public function update() {
 		//menangkap id data yg dipilih dari view (parameter get)
 		$id = $this->uri->segment(3);
+		$notif = $this->notif_model->count();
+		$count = count($notif);
 
 		//function read berfungsi mengambil 1 data dari table admin sesuai id yg dipilih
 		$data_admin_single_data = $this->admin_model->read_single_data($id);
@@ -117,6 +137,10 @@ class admin extends CI_Controller {
 
 						//mengirim data admin yang dipilih ke view
 						'data_admin_single_data' => $data_admin_single_data,
+						
+						'notif' => $notif,
+
+						'count' => $count,
 
 						'theme_page' => 'admin/user/update',
 					);
@@ -164,6 +188,8 @@ class admin extends CI_Controller {
 
 		//function read berfungsi mengambil 1 data dari table admin sesuai id yg dipilih
 		$data_admin_single_data = $this->admin_model->read_single_data($id);
+		$notif = $this->notif_model->count();
+		$count = count($notif);
 
 		//mengirim data ke view
 		$output = array(
@@ -171,6 +197,10 @@ class admin extends CI_Controller {
 
 						//mengirim data admin yang dipilih ke view
 						'data_admin_single_data' => $data_admin_single_data,
+						
+						'notif' => $notif,
+
+						'count' => $count,
 
 						'theme_page' => 'admin/user/reset',
 					);
@@ -337,10 +367,17 @@ class admin extends CI_Controller {
 		
 		//memanggil fungsi login submit	(agar di view tidak dilihat fungsi login submit)
 		$this->login_submit();
+		$notif = $this->notif_model->count();
+		$count = count($notif);
 
 		//mengirim data ke view 
 		$output = array(
 						'theme_page' => 'reset_password',
+						
+						'notif' => $notif,
+
+						'count' => $count,
+
 						'list' => 'Reset Password'
 					);
 

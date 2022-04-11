@@ -1,6 +1,11 @@
 <!DOCTYPE HTML>
 <html>
+<div class="container-fluid">
       <section class="content-header">
+        <ol class="breadcrumb mb-4">
+            <li class="breadcrumb-item">Dashboard</li>
+            <li class="breadcrumb-item active">Index</li>
+        </ol>
         <h2>
             Selamat Datang, <?= $this->session->userdata('nama') ?>
         </h2>
@@ -129,6 +134,7 @@
                             </div>
                         </div>
                     </div>
+</div>
     <div class="container mt-3">
       <div class="row">
         <div class="col-md-3">

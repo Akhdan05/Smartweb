@@ -10,6 +10,7 @@ class Pengunjung extends CI_Controller
 
 		//memanggil model
 		$this->load->model('pengunjung_model');
+		$this->load->model('notif_model');
 
 		if (empty($this->session->userdata('id'))) {
 			redirect('admin/login');
@@ -27,9 +28,9 @@ class Pengunjung extends CI_Controller
 		//memanggil function read pada pengunjung model
 		//function read berfungsi mengambil/read data dari table pengunjung di database
 		$data_pengunjung = $this->pengunjung_model->read();
-		$data_notif = $this->pengunjung_model->read_notif();
-		$count_notif = $this->pengunjung_model->count_notif();
-		$count = count($count_notif);
+		$data_notif = $this->notif_model->read();
+		$notif = $this->notif_model->count();
+		$count = count($notif);
 
 		//mengirim data ke view
 		$output = array(
@@ -39,9 +40,9 @@ class Pengunjung extends CI_Controller
 			//data pengunjung dikirim ke view
 			'data_pengunjung' => $data_pengunjung,
 
-			'data_notif' => $data_notif,
+			'notif' => $notif,
 
-			'count_notif' => $count_notif,
+			'data_notif' => $data_notif,
 
 			'count' => $count,
 
@@ -78,6 +79,8 @@ class Pengunjung extends CI_Controller
 
 		//function read berfungsi mengambil 1 data dari table pengunjung sesuai id yg dipilih
 		$data_pengunjung_single = $this->pengunjung_model->read_single($id);
+		$notif = $this->notif_model->count();
+		$count = count($notif);
 
 		//mengirim data ke view
 		$output = array(
@@ -85,6 +88,10 @@ class Pengunjung extends CI_Controller
 
 			//mengirim data pengunjung yang dipilih ke view
 			'data_pengunjung_single' => $data_pengunjung_single,
+			
+			'notif' => $notif,
+
+			'count' => $count,
 
 			'theme_page' => 'admin/pengunjung/update',
 		);

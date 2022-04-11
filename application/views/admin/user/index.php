@@ -1,3 +1,7 @@
+    <ol class="breadcrumb mb-4">
+        <li class="breadcrumb-item">Admin</li>
+        <li class="breadcrumb-item active">Index</li>
+    </ol>
 <a href="<?php echo site_url('admin/insert');?>" class="btn btn-primary">Tambah</a>
 <br /><br />
 
