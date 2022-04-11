@@ -15,10 +15,25 @@ class Shop extends CI_Controller
     }
 
     public function read(){
+        $data_shop = $this->shop_model->read();
+
         $output = array(
 			'list' => 'Shop',
 
+            'data_shop' => $data_shop,
+
 			'theme_page' => 'Shop/index',
+		);
+		$this->load->view('templates/index', $output);
+    }
+
+    public function detail($id){
+        $data = $this->shop_model->detail($id);
+
+        $output = array(
+            'data' => $data,
+
+			'theme_page' => 'Shop/detail',
 		);
 		$this->load->view('templates/index', $output);
     }

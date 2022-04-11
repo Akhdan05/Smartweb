@@ -31,168 +31,21 @@
                     </div>
                 </div>
                 <div class="row mb-5">
-
+                <?php foreach($data_shop as $data): ?>
                     <div class="col-sm-6 col-lg-4 mb-4" data-aos="fade-up">
                         <div class="block-4 text-center border">
                             <figure class="block-4-image">
-                                <a href="<?php echo base_url('Detail'); ?>"><img src="images/cloth_1.jpg" alt="Image placeholder"
+                                <a href="<?php echo site_url('shop/detail/'.$data['id']);?>"><img src="<?= $data['img-src']; ?>" alt="Image placeholder"
                                         class="img-fluid"></a>
                             </figure>
                             <div class="block-4-text p-4">
-                                <h3><a href="<?php echo base_url('Detail'); ?>">Tank Top</a></h3>
-                                <p class="mb-0">Finding perfect t-shirt</p>
-                                <p class="text-primary font-weight-bold">$50</p>
+                                <h3><a href="<?php echo site_url('shop/detail/'.$data['id']);?>"><?= $data['nama']; ?></a></h3>
+                                <p class="mb-0"><?= $data['ulasan']; ?></p>
+                                <p class="text-primary font-weight-bold"><?= $data['harga']; ?></p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-lg-4 mb-4" data-aos="fade-up">
-                        <div class="block-4 text-center border">
-                            <figure class="block-4-image">
-                                <a href="<?php echo base_url('Detail'); ?>"><img src="images/shoe_1.jpg" alt="Image placeholder"
-                                        class="img-fluid"></a>
-                            </figure>
-                            <div class="block-4-text p-4">
-                                <h3><a href="<?php echo base_url('Detail'); ?>">Corater</a></h3>
-                                <p class="mb-0">Finding perfect products</p>
-                                <p class="text-primary font-weight-bold">$50</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-lg-4 mb-4" data-aos="fade-up">
-                        <div class="block-4 text-center border">
-                            <figure class="block-4-image">
-                                <a href="<?php echo base_url('Detail'); ?>"><img src="images/cloth_2.jpg" alt="Image placeholder"
-                                        class="img-fluid"></a>
-                            </figure>
-                            <div class="block-4-text p-4">
-                                <h3><a href="<?php echo base_url('Detail'); ?>">Polo Shirt</a></h3>
-                                <p class="mb-0">Finding perfect products</p>
-                                <p class="text-primary font-weight-bold">$50</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-6 col-lg-4 mb-4" data-aos="fade-up">
-                        <div class="block-4 text-center border">
-                            <figure class="block-4-image">
-                                <a href="<?php echo base_url('Detail'); ?>"><img src="images/cloth_3.jpg" alt="Image placeholder"
-                                        class="img-fluid"></a>
-                            </figure>
-                            <div class="block-4-text p-4">
-                                <h3><a href="<?php echo base_url('Detail'); ?>">T-Shirt Mockup</a></h3>
-                                <p class="mb-0">Finding perfect products</p>
-                                <p class="text-primary font-weight-bold">$50</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-lg-4 mb-4" data-aos="fade-up">
-                        <div class="block-4 text-center border">
-                            <figure class="block-4-image">
-                                <a href="<?php echo base_url('Detail'); ?>"><img src="images/shoe_1.jpg" alt="Image placeholder"
-                                        class="img-fluid"></a>
-                            </figure>
-                            <div class="block-4-text p-4">
-                                <h3><a href="<?php echo base_url('Detail'); ?>">Corater</a></h3>
-                                <p class="mb-0">Finding perfect products</p>
-                                <p class="text-primary font-weight-bold">$50</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-lg-4 mb-4" data-aos="fade-up">
-                        <div class="block-4 text-center border">
-                            <figure class="block-4-image">
-                                <a href="<?php echo base_url('Detail'); ?>"><img src="images/cloth_1.jpg" alt="Image placeholder"
-                                        class="img-fluid"></a>
-                            </figure>
-                            <div class="block-4-text p-4">
-                                <h3><a href="<?php echo base_url('Detail'); ?>">Tank Top</a></h3>
-                                <p class="mb-0">Finding perfect t-shirt</p>
-                                <p class="text-primary font-weight-bold">$50</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-lg-4 mb-4" data-aos="fade-up">
-                        <div class="block-4 text-center border">
-                            <figure class="block-4-image">
-                                <a href="<?php echo base_url('Detail'); ?>"><img src="images/shoe_1.jpg" alt="Image placeholder"
-                                        class="img-fluid"></a>
-                            </figure>
-                            <div class="block-4-text p-4">
-                                <h3><a href="<?php echo base_url('Detail'); ?>">Corater</a></h3>
-                                <p class="mb-0">Finding perfect products</p>
-                                <p class="text-primary font-weight-bold">$50</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-lg-4 mb-4" data-aos="fade-up">
-                        <div class="block-4 text-center border">
-                            <figure class="block-4-image">
-                                <a href="<?php echo base_url('Detail'); ?>"><img src="images/cloth_2.jpg" alt="Image placeholder"
-                                        class="img-fluid"></a>
-                            </figure>
-                            <div class="block-4-text p-4">
-                                <h3><a href="<?php echo base_url('Detail'); ?>">Polo Shirt</a></h3>
-                                <p class="mb-0">Finding perfect products</p>
-                                <p class="text-primary font-weight-bold">$50</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-6 col-lg-4 mb-4" data-aos="fade-up">
-                        <div class="block-4 text-center border">
-                            <figure class="block-4-image">
-                                <a href="<?php echo base_url('Detail'); ?>"><img src="images/cloth_3.jpg" alt="Image placeholder"
-                                        class="img-fluid"></a>
-                            </figure>
-                            <div class="block-4-text p-4">
-                                <h3><a href="<?php echo base_url('Detail'); ?>">T-Shirt Mockup</a></h3>
-                                <p class="mb-0">Finding perfect products</p>
-                                <p class="text-primary font-weight-bold">$50</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-lg-4 mb-4" data-aos="fade-up">
-                        <div class="block-4 text-center border">
-                            <figure class="block-4-image">
-                                <a href="<?php echo base_url('Detail'); ?>"><img src="images/shoe_1.jpg" alt="Image placeholder"
-                                        class="img-fluid"></a>
-                            </figure>
-                            <div class="block-4-text p-4">
-                                <h3><a href="<?php echo base_url('Detail'); ?>">Corater</a></h3>
-                                <p class="mb-0">Finding perfect products</p>
-                                <p class="text-primary font-weight-bold">$50</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-lg-4 mb-4" data-aos="fade-up">
-                        <div class="block-4 text-center border">
-                            <figure class="block-4-image">
-                                <a href="<?php echo base_url('Detail'); ?>"><img src="images/cloth_1.jpg" alt="Image placeholder"
-                                        class="img-fluid"></a>
-                            </figure>
-                            <div class="block-4-text p-4">
-                                <h3><a href="<?php echo base_url('Detail'); ?>">Tank Top</a></h3>
-                                <p class="mb-0">Finding perfect t-shirt</p>
-                                <p class="text-primary font-weight-bold">$50</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-6 col-lg-4 mb-4" data-aos="fade-up">
-                        <div class="block-4 text-center border">
-                            <figure class="block-4-image">
-                                <a href="<?php echo base_url('Detail'); ?>"><img src="images/cloth_2.jpg" alt="Image placeholder"
-                                        class="img-fluid"></a>
-                            </figure>
-                            <div class="block-4-text p-4">
-                                <h3><a href="<?php echo base_url('Detail'); ?>">Polo Shirt</a></h3>
-                                <p class="mb-0">Finding perfect products</p>
-                                <p class="text-primary font-weight-bold">$50</p>
-                            </div>
-                        </div>
-                    </div>
-
-
+                    <?php endforeach; ?>
                 </div>
                 <div class="row" data-aos="fade-up">
                     <div class="col-md-12 text-center">
