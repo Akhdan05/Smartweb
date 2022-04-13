@@ -32,7 +32,7 @@
             </div>
           </div>
           <div>
-            <div class="small text-gray-700" id="tanggal"><?= $data['create_at']; ?></div>
+            <div class="small text-gray-700" id="tanggal"><?= date('D, d-M-Y', $data['tanggal']); ?></div>
             <span class="font-weight-bold" id="pesan"><?= $data['judul']; ?></span>
           </div>
         </a>
