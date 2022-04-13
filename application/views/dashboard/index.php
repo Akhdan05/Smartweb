@@ -10,7 +10,8 @@
                                 iaculis
                                 quam. Integer accumsan tincidunt fringilla. </p>
                             <p>
-                                <a href="#" class="btn btn-sm btn-primary">Shop Now</a>
+                                <a href="<?php echo base_url('index.php/Shop'); ?>" class="btn btn-sm btn-primary">Shop
+                                    Now</a>
                             </p>
                         </div>
                     </div>
@@ -60,7 +61,7 @@
         <div class="container">
             <div class="d-flex justify-content-center">
                 <div class="col-sm-6 col-md-6 col-lg-4 mb-4 mb-lg-0" data-aos="fade" data-aos-delay="">
-                    <a class="block-2-item" href="<?php echo site_url('Shop/read_iphone');?>">
+                    <a class="block-2-item" href="<?php echo site_url('Shop/read_iphone'); ?>">
                         <figure class="image">
                             <img src="<?php echo base_url() ?>assets/images/iphone13.png" alt="" class="img-fluid">
                         </figure>
@@ -71,7 +72,7 @@
                     </a>
                 </div>
                 <div class="col-sm-6 col-md-6 col-lg-4 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="100">
-                    <a class="block-2-item" href="<?php echo site_url('Shop/read_macbook');?>">
+                    <a class="block-2-item" href="<?php echo site_url('Shop/read_macbook'); ?>">
                         <figure class="image">
                             <img src="<?php echo base_url() ?>assets/images/mac.png" alt="" class="img-fluid">
                         </figure>
@@ -95,11 +96,12 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="nonloop-block-3 owl-carousel">
-                        <?php foreach($list1 as $data): ?>
+                        <?php foreach ($list1 as $data) : ?>
                         <div class="item">
                             <div class="block-4 text-center">
                                 <figure class="block-4-image">
-                                    <img src="<?php echo base_url() ?>assets/images/iphone_13_pro.jpg" alt="Image placeholder" class="img-fluid">
+                                    <img src="<?php echo base_url() ?>assets/images/iphone_13_pro.jpg"
+                                        alt="Image placeholder" class="img-fluid">
                                 </figure>
                                 <div class="block-4-text p-4">
                                     <h3><a href="<?= $data['url_desc'] ?>"><?= $data['judul'] ?></a></h3>
@@ -112,11 +114,12 @@
                         </div>
                         <?php endforeach; ?>
 
-                        <?php foreach($list2 as $data): ?>
+                        <?php foreach ($list2 as $data) : ?>
                         <div class="item">
                             <div class="block-4 text-center">
                                 <figure class="block-4-image">
-                                    <img src="<?php echo base_url() ?>assets/images/iphone_se.jpg" alt="Image placeholder" class="img-fluid">
+                                    <img src="<?php echo base_url() ?>assets/images/iphone_se.jpg"
+                                        alt="Image placeholder" class="img-fluid">
                                 </figure>
                                 <div class="block-4-text p-4">
                                     <h3><a href="<?= $data['url_desc'] ?>"><?= $data['judul'] ?></a></h3>
@@ -127,11 +130,12 @@
                         </div>
                         <?php endforeach; ?>
 
-                        <?php foreach($list3 as $data): ?>
+                        <?php foreach ($list3 as $data) : ?>
                         <div class="item">
                             <div class="block-4 text-center">
                                 <figure class="block-4-image">
-                                    <img src="<?php echo base_url() ?>assets/images/iphone_13.jpg" alt="Image placeholder" class="img-fluid">
+                                    <img src="<?php echo base_url() ?>assets/images/iphone_13.jpg"
+                                        alt="Image placeholder" class="img-fluid">
                                 </figure>
                                 <div class="block-4-text p-4">
                                     <h3><a href="<?= $data['url_desc'] ?>"><?= $data['judul'] ?></a></h3>
@@ -144,11 +148,12 @@
                         </div>
                         <?php endforeach; ?>
 
-                        <?php foreach($list4 as $data): ?>
+                        <?php foreach ($list4 as $data) : ?>
                         <div class="item">
                             <div class="block-4 text-center">
                                 <figure class="block-4-image">
-                                    <img src="<?php echo base_url() ?>assets/images/studio_display.jpg" alt="Image placeholder" class="img-fluid">
+                                    <img src="<?php echo base_url() ?>assets/images/studio_display.jpg"
+                                        alt="Image placeholder" class="img-fluid">
                                 </figure>
                                 <div class="block-4-text p-4">
                                     <h3><a href="<?= $data['url_desc'] ?>"><?= $data['judul'] ?></a></h3>
@@ -161,11 +166,12 @@
                         </div>
                         <?php endforeach; ?>
 
-                        <?php foreach($list5 as $data): ?>
+                        <?php foreach ($list5 as $data) : ?>
                         <div class="item">
                             <div class="block-4 text-center">
                                 <figure class="block-4-image">
-                                    <img src="<?php echo base_url() ?>assets/images/mac_studio.jpg" alt="Image placeholder" class="img-fluid">
+                                    <img src="<?php echo base_url() ?>assets/images/mac_studio.jpg"
+                                        alt="Image placeholder" class="img-fluid">
                                 </figure>
                                 <div class="block-4-text p-4">
                                     <h3><a href="<?= $data['url_desc'] ?>"><?= $data['judul'] ?></a></h3>
@@ -176,11 +182,12 @@
                         </div>
                         <?php endforeach; ?>
 
-                        <?php foreach($list6 as $data): ?>
+                        <?php foreach ($list6 as $data) : ?>
                         <div class="item">
                             <div class="block-4 text-center">
                                 <figure class="block-4-image">
-                                    <img src="<?php echo base_url() ?>assets/images/ipad.jpg" alt="Image placeholder" class="img-fluid">
+                                    <img src="<?php echo base_url() ?>assets/images/ipad.jpg" alt="Image placeholder"
+                                        class="img-fluid">
                                 </figure>
                                 <div class="block-4-text p-4">
                                     <h3><a href="<?= $data['url_desc'] ?>"><?= $data['judul'] ?></a></h3>
@@ -191,11 +198,12 @@
                         </div>
                         <?php endforeach; ?>
 
-                        <?php foreach($list7 as $data): ?>
+                        <?php foreach ($list7 as $data) : ?>
                         <div class="item">
                             <div class="block-4 text-center">
                                 <figure class="block-4-image">
-                                    <img src="<?php echo base_url() ?>assets/images/watch.jpg" alt="Image placeholder" class="img-fluid">
+                                    <img src="<?php echo base_url() ?>assets/images/watch.jpg" alt="Image placeholder"
+                                        class="img-fluid">
                                 </figure>
                                 <div class="block-4-text p-4">
                                     <h3><a href="<?= $data['url_desc'] ?>"><?= $data['judul'] ?></a></h3>
@@ -208,11 +216,12 @@
                         </div>
                         <?php endforeach; ?>
 
-                        <?php foreach($list8 as $data): ?>
+                        <?php foreach ($list8 as $data) : ?>
                         <div class="item">
                             <div class="block-4 text-center">
                                 <figure class="block-4-image">
-                                    <img src="<?php echo base_url() ?>assets/images/macbook_pro_14.jpg" alt="Image placeholder" class="img-fluid">
+                                    <img src="<?php echo base_url() ?>assets/images/macbook_pro_14.jpg"
+                                        alt="Image placeholder" class="img-fluid">
                                 </figure>
                                 <div class="block-4-text p-4">
                                     <h3><a href="<?= $data['url_desc'] ?>"><?= $data['judul'] ?></a></h3>
@@ -241,16 +250,19 @@
                 </div>
                 <div class="row align-items-center">
                     <div class="col-md-12 col-lg-7 mb-5">
-                        <a href="#"><img src="<?php echo base_url() ?>assets/images/iphone_all.jpg" alt="Image placeholder" class="img-fluid rounded"></a>
+                        <a href="#"><img src="<?php echo base_url() ?>assets/images/iphone_all.jpg"
+                                alt="Image placeholder" class="img-fluid rounded"></a>
                     </div>
                     <div class="col-md-12 col-lg-5 text-center pl-md-5">
                         <h2><a href="#">50% less in all items</a></h2>
-                        <p class="post-meta mb-4">By <a href="#">Carl Smith</a> <span class="block-8-sep">&bullet;</span>
+                        <p class="post-meta mb-4">By <a href="#">Carl Smith</a> <span
+                                class="block-8-sep">&bullet;</span>
                             September 3, 2018</p>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam iste dolor accusantium
                             facere
                             corporis ipsum animi deleniti fugiat. Ex, veniam?</p>
-                        <p><a href="<?php echo site_url('Shop/index');?>" class="btn btn-primary btn-sm">Shop Now</a></p>
+                        <p><a href="<?php echo site_url('Shop/index'); ?>" class="btn btn-primary btn-sm">Shop Now</a>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -262,7 +274,8 @@
             <div class="row mb-5">
                 <div class="col-md-6">
                     <div class="block-16">
-                        <a href="#"><img src="<?php echo base_url() ?>assets/images/team.png" alt="Image placeholder" class="img-fluid rounded"></a>
+                        <a href="#"><img src="<?php echo base_url() ?>assets/images/team.png" alt="Image placeholder"
+                                class="img-fluid rounded"></a>
                     </div>
                 </div>
                 <div class="col-md-1"></div>
@@ -294,7 +307,8 @@
                     <div class="block-38 text-center">
                         <div class="block-38-img">
                             <div class="block-38-header">
-                                <img src="<?php echo base_url() ?>assets/images/akhdan.png" alt="Image placeholder" class="mb-4">
+                                <img src="<?php echo base_url() ?>assets/images/akhdan.png" alt="Image placeholder"
+                                    class="mb-4">
                                 <h3 class="block-38-heading h4">Akhdan Rafid Fadhila</h3>
                                 <h3 class="block-38-heading h4">41519010078</h3>
                                 <p class="block-38-subheading">CEO/Co-Founder</p>
@@ -306,7 +320,8 @@
                     <div class="block-38 text-center">
                         <div class="block-38-img">
                             <div class="block-38-header">
-                                <img src="<?php echo base_url() ?>assets/images/frida.png" alt="Image placeholder" class="mb-4">
+                                <img src="<?php echo base_url() ?>assets/images/frida.png" alt="Image placeholder"
+                                    class="mb-4">
                                 <h3 class="block-38-heading h4">Frida Eka Wardani</h3>
                                 <h3 class="block-38-heading h4">41519010063</h3>
                                 <p class="block-38-subheading">Frontend Developer</p>
@@ -318,7 +333,8 @@
                     <div class="block-38 text-center">
                         <div class="block-38-img">
                             <div class="block-38-header">
-                                <img src="<?php echo base_url() ?>assets/images/iqbal.png" alt="Image placeholder" class="mb-4">
+                                <img src="<?php echo base_url() ?>assets/images/iqbal.png" alt="Image placeholder"
+                                    class="mb-4">
                                 <h3 class="block-38-heading h4">Muhammad Iqbal Yusril</h3>
                                 <h3 class="block-38-heading h4">41519010106</h3>
                                 <p class="block-38-subheading">System Analyst</p>
@@ -330,7 +346,8 @@
                     <div class="block-38 text-center">
                         <div class="block-38-img">
                             <div class="block-38-header">
-                                <img src="<?php echo base_url() ?>assets/images/abel.jpg" alt="Image placeholder" class="mb-4">
+                                <img src="<?php echo base_url() ?>assets/images/abel.jpg" alt="Image placeholder"
+                                    class="mb-4">
                                 <h3 class="block-38-heading h4">Raychal A. Wiradiputra</h3>
                                 <h3 class="block-38-heading h4">41519010159</h3>
                                 <p class="block-38-subheading">Backend Developer</p>
