@@ -22,6 +22,8 @@
                         <li class="">
                             <a href="<?php echo base_url() ?>Dashboard" class="js-logo-clone">Home</a>
                         </li>
+<<<<<<< HEAD
+=======
                         <li><a href="<?php echo base_url('Dashboard#about'); ?>" class="js-logo-clone">About</a>
                         </li>
                         <li class="has-children">
@@ -31,6 +33,7 @@
                                 </li>
                                 <li><a href="<?php echo base_url('index.php/Shop'); ?>" class="js-logo-clone">Mac</a>
                                 </li>
+>>>>>>> 184e673a6fbb50102d4af368b220b403cef3d93e
                             </ul>
                         </li>
                         <li><a href="<?php echo base_url('index.php/tamu'); ?>" class="js-logo-clone">Buku Tamu</a></li>

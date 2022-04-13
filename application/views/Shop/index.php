@@ -47,31 +47,16 @@
                     </div>
                     <?php endforeach; ?>
                 </div>
-                <div class="row" data-aos="fade-up">
-                    <div class="col-md-12 text-center">
-                        <div class="site-block-27">
-                            <ul>
-                                <li><a href="#">&lt;</a></li>
-                                <li class="active"><span>1</span></li>
-                                <li><a href="#">2</a></li>
-                                <li><a href="#">3</a></li>
-                                <li><a href="#">4</a></li>
-                                <li><a href="#">5</a></li>
-                                <li><a href="#">&gt;</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
             </div>
 
             <div class="col-md-3 order-1 mb-5 mb-md-0">
                 <div class="border p-4 rounded mb-4">
                     <h3 class="mb-3 h6 text-uppercase text-black d-block">Categories</h3>
                     <ul class="list-unstyled mb-0">
-                        <li class="mb-1"><a href="#" class="d-flex"><span>Iphone</span> <span
-                                    class="text-black ml-auto">(2,220)</span></a></li>
-                        <li class="mb-1"><a href="#" class="d-flex"><span>Mac</span> <span
-                                    class="text-black ml-auto">(2,550)</span></a></li>
+                        <li class="mb-1"><a href="<?php echo site_url('Shop/read_iphone');?>" class="d-flex"><span>Iphone</span> <span
+                                    class="text-black ml-auto">(<?= $data_iphone ?>)</span></a></li>
+                        <li class="mb-1"><a href="<?php echo site_url('Shop/read_macbook'); ?>" class="d-flex"><span>Mac</span> <span
+                                    class="text-black ml-auto">(<?= $data_macbook ?>)</span></a></li>
                     </ul>
                 </div>
 

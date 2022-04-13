@@ -16,11 +16,55 @@ class Shop extends CI_Controller
 
     public function read(){
         $data_shop = $this->shop_model->read();
+        $data_iphone = $this->shop_model->jml_iphone();
+        $data_macbook = $this->shop_model->jml_macbook();
 
         $output = array(
 			'list' => 'Shop',
 
             'data_shop' => $data_shop,
+
+            'data_iphone' => $data_iphone,
+
+            'data_macbook' => $data_macbook,
+
+			'theme_page' => 'Shop/index',
+		);
+		$this->load->view('templates/index', $output);
+    }
+
+    public function read_iphone(){
+        $data_shop = $this->shop_model->read_iphone();
+        $data_iphone = $this->shop_model->jml_iphone();
+        $data_macbook = $this->shop_model->jml_macbook();
+
+        $output = array(
+			'list' => 'Shop',
+
+            'data_shop' => $data_shop,
+
+            'data_iphone' => $data_iphone,
+
+            'data_macbook' => $data_macbook,
+
+			'theme_page' => 'Shop/index',
+		);
+		$this->load->view('templates/index', $output);
+    }
+
+    public function read_macbook(){
+        $data_shop = $this->shop_model->read_macbook();
+        $data_iphone = $this->shop_model->jml_iphone();
+        $data_macbook = $this->shop_model->jml_macbook();
+
+        $output = array(
+			'list' => 'Shop',
+
+            'data_shop' => $data_shop,
+
+            'data_iphone' => $data_iphone,
+
+            'data_macbook' => $data_macbook,
 
 			'theme_page' => 'Shop/index',
 		);
