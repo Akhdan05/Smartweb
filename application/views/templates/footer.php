@@ -17,7 +17,7 @@
                 <div class="block-5 mb-5">
                     <h3 class="footer-heading mb-4">Contact Info</h3>
                     <ul class="list-unstyled">
-                        <li class="address">Jl. Raya Meruya Selatan 1, Kembangan, DKI Jakarta</li>
+                        <li class="address">Jl. Raya Meruya Selatan, Kembangan, DKI Jakarta</li>
                         <li class="phone"><a href="tel://23923929210">021-5840815</a></li>
                         <li class="email">ngeappleaja@gmail.com</li>
                     </ul>

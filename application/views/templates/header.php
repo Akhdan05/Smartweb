@@ -22,12 +22,12 @@
                         <li class="">
                             <a href="<?php echo base_url() ?>Dashboard" class="js-logo-clone">Home</a>
                         </li>
-                        <li><a href="#about">About</a></li>
+                            <li><a href="<?php echo base_url('Dashboard#about'); ?>" class="js-logo-clone">About</a></li>
                         <li class="has-children">
                             <a href="<?php echo base_url('index.php/Shop'); ?>" class="js-logo-clone">Shop</a>
                             <ul class="dropdown">
-                                <li><a href="#">Iphone</a></li>
-                                <li><a href="#">Mac</a></li>
+                                <li><a href="<?php echo site_url('Shop/read_iphone');?>">Iphone</a></li>
+                                <li><a href="<?php echo site_url('Shop/read_macbook');?>">Mac</a></li>
                             </ul>
                         </li>
                         <li><a href="<?php echo base_url('index.php/tamu'); ?>" class="js-logo-clone">Buku Tamu</a></li>
