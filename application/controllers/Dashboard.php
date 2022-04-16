@@ -48,10 +48,10 @@ class dashboard extends CI_Controller
             $cariHrefBeli4 = $xpath->query('/html/body/main/section[2]/div[3]/div/div/div[1]/div/a[2]/@href');
 
             // content 5
-            $cariJudul5 = $xpath->query('/html/body/main/section[2]/div[4]/div/div/div[1]/h4');
+            $cariJudul5 = $xpath->query('/html/body/main/section[2]/div[4]/div/div/div[1]/h4/span');
             $cariDesc5 = $xpath->query('/html/body/main/section[2]/div[4]/div/div/div[1]/h5');
-            $cariSubDesc5 = $xpath->query('/html/body/main/section[2]/div[4]/div/div/div[1]/p');
-            $cariHrefDesc5 = $xpath->query('/html/body/main/section[2]/div[4]/div/div/div[1]/div/a/@href');
+            $cariHrefDesc5 = $xpath->query('/html/body/main/section[2]/div[4]/div/div/div[1]/div/a[2]/@href');
+            $cariHrefBeli5 = $xpath->query('/html/body/main/section[2]/div[4]/div/div/div[1]/div/a[2]/@href');
 
              // content 6
             $cariJudul6 = $xpath->query('/html/body/main/section[1]/div[3]/div/div/div[1]/h2/span');
@@ -174,8 +174,8 @@ class dashboard extends CI_Controller
                 foreach($cariDesc5 as $rowdesc5) {
                     $cariDesc_list5[] = array('desc' => $rowdesc5 -> nodeValue); 
                 }
-                foreach($cariSubDesc5 as $rowsubdesc5) {
-                    $cariSubDesc_list5[] = array('sub_desc' => $rowsubdesc5 -> nodeValue); 
+                foreach($cariHrefBeli5 as $rowhrefbeli5) {
+                    $cariHrefBeli_list5[] = array('url_beli' => $rowhrefbeli5 -> nodeValue); 
                 }
                 foreach($cariHrefDesc5 as $rowhrefdesc5) {
                     $cariHrefDesc_list5[] = array('url_desc' => $rowhrefdesc5 -> nodeValue); 
@@ -186,8 +186,8 @@ class dashboard extends CI_Controller
                     $carijudul_list5[] = array(
                         'judul' => $cariJudul_list5[$i]["judul"],
                         'desc' => $cariDesc_list5[$i]["desc"],
-                        'sub_desc' => $cariSubDesc_list5[$i]["sub_desc"],
-                        'url_desc' => 'https://www.apple.com/' . $cariHrefDesc_list5[$i]["url_desc"]
+                        'url_desc' => 'https://www.apple.com/' . $cariHrefDesc_list5[$i]["url_desc"],
+                        'url_beli' => 'https://www.apple.com/' . $cariHrefBeli_list5[$i]["url_beli"]
                     );
                 $i++;
                 }
