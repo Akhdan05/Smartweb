@@ -31,13 +31,111 @@ class Shop extends CI_Controller
 			'theme_page' => 'Shop/index',
 		);
 		$this->load->view('templates/index', $output);
-    }
+    } 
 
     public function read_iphone(){
         $data_shop = $this->shop_model->read_iphone();
         $data_iphone = $this->shop_model->jml_iphone();
         $data_macbook = $this->shop_model->jml_macbook();
 
+        $output = array(
+			'list' => 'Shop',
+
+            'data_shop' => $data_shop,
+
+            'data_iphone' => $data_iphone,
+
+            'data_macbook' => $data_macbook,
+
+			'theme_page' => 'Shop/index',
+		);
+		$this->load->view('templates/index', $output);
+    }
+
+    public function getAscip(){
+        $data_shop = $this->shop_model->getAscip();
+        $data_iphone = $this->shop_model->jml_iphone();
+        $data_macbook = $this->shop_model->jml_macbook();
+// 
+        $output = array(
+			'list' => 'Shop',
+
+            'data_shop' => $data_shop,
+
+            'data_iphone' => $data_iphone,
+
+            'data_macbook' => $data_macbook,
+
+			'theme_page' => 'Shop/index',
+		);
+		$this->load->view('templates/index', $output);
+
+//         if(read_iphone('kategori')= 'iphone'){
+//             $data_shop = $this->shop_model->getAscip();
+//         }
+//         else{
+//             $data_shop = $this->shop_model->getAscmac();
+//         }
+//         $data_iphone = $this->shop_model->jml_iphone();
+//         $data_macbook = $this->shop_model->jml_macbook();
+// // 
+//         $output = array(
+// 			'list' => 'Shop',
+
+//             'data_shop' => $data_shop,
+
+//             'data_iphone' => $data_iphone,
+
+//             'data_macbook' => $data_macbook,
+
+// 			'theme_page' => 'Shop/index',
+// 		);
+// 		$this->load->view('templates/index', $output);
+    }
+
+    public function getDescip(){
+        $data_shop = $this->shop_model->getDescip();
+        $data_iphone = $this->shop_model->jml_iphone();
+        $data_macbook = $this->shop_model->jml_macbook();
+// 
+        $output = array(
+			'list' => 'Shop',
+
+            'data_shop' => $data_shop,
+
+            'data_iphone' => $data_iphone,
+
+            'data_macbook' => $data_macbook,
+
+			'theme_page' => 'Shop/index',
+		);
+		$this->load->view('templates/index', $output);
+    }
+
+    public function getAscmac(){
+        $data_shop = $this->shop_model->getAscmac();
+        $data_iphone = $this->shop_model->jml_iphone();
+        $data_macbook = $this->shop_model->jml_macbook();
+// 
+        $output = array(
+			'list' => 'Shop',
+
+            'data_shop' => $data_shop,
+
+            'data_iphone' => $data_iphone,
+
+            'data_macbook' => $data_macbook,
+
+			'theme_page' => 'Shop/index',
+		);
+		$this->load->view('templates/index', $output);
+    }
+
+    public function getDescmac(){
+        $data_shop = $this->shop_model->getDescmac();
+        $data_iphone = $this->shop_model->jml_iphone();
+        $data_macbook = $this->shop_model->jml_macbook();
+// 
         $output = array(
 			'list' => 'Shop',
 

@@ -170,13 +170,12 @@
                         <div class="item">
                             <div class="block-4 text-center">
                                 <figure class="block-4-image">
-                                    <img src="<?php echo base_url() ?>assets/images/mac_studio.jpg"
+                                    <img src="<?php echo base_url() ?>assets/images/watch.jpg"
                                         alt="Image placeholder" class="img-fluid">
                                 </figure>
                                 <div class="block-4-text p-4">
                                     <h3><a href="<?= $data['url_desc'] ?>"><?= $data['judul'] ?></a></h3>
                                     <p class="text-primary font-weight-bold"><?= $data['desc'] ?></p>
-                                    <p class="text-primary font-weight"><?= $data['sub_desc'] ?></p>
                                 </div>
                             </div>
                         </div>
@@ -202,7 +201,7 @@
                         <div class="item">
                             <div class="block-4 text-center">
                                 <figure class="block-4-image">
-                                    <img src="<?php echo base_url() ?>assets/images/watch.jpg" alt="Image placeholder"
+                                    <img src="<?php echo base_url() ?>assets/images/arcade.jpg" alt="Image placeholder"
                                         class="img-fluid">
                                 </figure>
                                 <div class="block-4-text p-4">

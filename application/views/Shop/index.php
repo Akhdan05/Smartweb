@@ -23,8 +23,10 @@
                                 <button type="button" class="btn btn-secondary btn-sm dropdown-toggle"
                                     id="dropdownMenuReference" data-toggle="dropdown">Reference</button>
                                 <div class="dropdown-menu" aria-labelledby="dropdownMenuReference">
-                                    <a class="dropdown-item" href="#">Price, low to high</a>
-                                    <a class="dropdown-item" href="#">Price, high to low</a>
+                                    <a class="dropdown-item" href="<?php echo site_url('Shop/getAscip'); ?>">Price, low to high (Iphone)</a>
+                                    <a class="dropdown-item" href="<?php echo site_url('Shop/getDescip'); ?>">Price, high to low (Iphone)</a>
+                                    <a class="dropdown-item" href="<?php echo site_url('Shop/getAscmac'); ?>">Price, low to high (Macbook)</a>
+                                    <a class="dropdown-item" href="<?php echo site_url('Shop/getDescmac'); ?>">Price, high to low (Macbook)</a>
                                 </div>
                             </div>
                         </div>
@@ -38,7 +40,7 @@
                                 <a href="<?php echo site_url('shop/detail/' . $data['id']); ?>"><img
                                         src="<?= $data['img-src']; ?>" alt="Image placeholder" class="img-fluid"></a>
                             </figure>
-                            <div class="block-4-text p-4">
+                            <div class="block-4-text p-4"> 
                                 <h3><a
                                         href="<?php echo site_url('shop/detail/' . $data['id']); ?>"><?= $data['nama']; ?></a>
                                 </h3>
