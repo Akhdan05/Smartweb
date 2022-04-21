@@ -116,7 +116,15 @@ class admin extends CI_Controller {
                 'nama' => $nama,
             );
 
+			$notif = [
+				'judul' => 'Admin',
+				'pesan' => 'Nama ' . $this->input->post('nama') . ' Telah terftar menjadi admin pada ' . date('D, d-M-Y', $input['tanggal']) . '.',
+				'tanggal' => time(),
+				'is_read' => 0
+			];
+
             $data_admin = $this->admin_model->insert($input);
+			$data_notif_pengunjung = $this->notif_model->insert($notif);
         
             redirect('admin/read');
 		}
@@ -163,9 +171,17 @@ class admin extends CI_Controller {
                         'nama' => $nama,
 					);
 
+		$notif = [
+			'judul' => 'Update Admin',
+			'pesan' => 'Nama ' . $this->input->post('nama') . ' Telah memperbarui data pada ' . date('D, d-M-Y', $input['tanggal']) . '.',
+			'tanggal' => time(),
+			'is_read' => 0
+		];
+
 		//memanggil function insert pada admin model
 		//function insert berfungsi menyimpan/create data ke table admin di database
 		$data_admin = $this->admin_model->update($input, $id);
+		$data_notif_pengunjung = $this->notif_model->insert($notif);
 
 		//mengembalikan halaman ke function read
 		redirect('admin/read');
@@ -244,9 +260,18 @@ class admin extends CI_Controller {
                 'password' => $password,
             );
 
+			$notif = [
+				'judul' => 'Reset Password',
+				'pesan' => 'Nama ' . $this->input->post('nama') . ' Telah me-reset password pada ' . date('D, d-M-Y', $input['tanggal']) . '.',
+				'tanggal' => time(),
+				'is_read' => 0
+			];
+
 			//memanggil function insert pada admin model
 			//function insert berfungsi menyimpan/create data ke table admin di database
 			$data_admin = $this->admin_model->update($input, $id);
+			$data_notif_pengunjung = $this->notif_model->insert($notif);
+
 
 			//mengembalikan halaman ke function read
 			redirect('admin/read');
