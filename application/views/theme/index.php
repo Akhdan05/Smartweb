@@ -15,13 +15,13 @@
 
     <!-- css yang digunakan theme -->
     <link rel="stylesheet" href="<?php echo base_url() ?>assets/css/bootstrap.min.css">
-    <link href="<?php echo base_url('assets-admin/vendor/fontawesome-free/css/all.min.css'); ?>" rel="stylesheet" type="text/css">
-    <link href="<?php echo base_url('assets-admin/css/sb-admin-2.min.css'); ?>" rel="stylesheet">
+    <link href="<?php echo base_url('assets/vendor/fontawesome-free/css/all.min.css'); ?>" rel="stylesheet" type="text/css">
+    <link href="<?php echo base_url('assets/css/sb-admin-2.min.css'); ?>" rel="stylesheet">
     <link rel="stylesheet" href="<?php echo base_url() ?>assets/css/AdminLTE.min.css">
 
     <!-- css yang digunakan datatables -->
-    <link href="<?php echo base_url('assets-admin/vendor/datatables/jquery.dataTables.min.css'); ?>" rel="stylesheet">
-    <link href="<?php echo base_url('assets-admin/vendor/datatables/dataTables.bootstrap4.min.css'); ?>" rel="stylesheet">
+    <link href="<?php echo base_url('assets/vendor/datatables/jquery.dataTables.min.css'); ?>" rel="stylesheet">
+    <link href="<?php echo base_url('assets/vendor/datatables/dataTables.bootstrap4.min.css'); ?>" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.5.6/css/buttons.dataTables.min.css">
     <style type="text/css">
         .dataTables_filter {
@@ -74,13 +74,13 @@
     </a>
 
     <!-- js yang digunakan theme -->
-    <script src="<?php echo base_url('assets-admin/vendor/jquery/jquery.min.js'); ?>"></script>
-    <script src="<?php echo base_url('assets-admin/vendor/bootstrap/js/bootstrap.bundle.min.js'); ?>"></script>
-    <script src="<?php echo base_url('assets-admin/vendor/jquery-easing/jquery.easing.min.js'); ?>"></script>
-    <script src="<?php echo base_url('assets-admin/js/sb-admin-2.min.js'); ?>"></script>
+    <script src="<?php echo base_url('assets/vendor/jquery/jquery.min.js'); ?>"></script>
+    <script src="<?php echo base_url('assets/vendor/bootstrap/js/bootstrap.bundle.min.js'); ?>"></script>
+    <script src="<?php echo base_url('assets/vendor/jquery-easing/jquery.easing.min.js'); ?>"></script>
+    <script src="<?php echo base_url('assets/js/sb-admin-2.min.js'); ?>"></script>
 
     <!-- js yang digunakan datatables -->
-    <script src="<?php echo base_url('assets-admin/vendor/datatables/jquery.dataTables.min.js') ?>"></script>
+    <script src="<?php echo base_url('assets/vendor/datatables/jquery.dataTables.min.js') ?>"></script>
     <script src="https://cdn.datatables.net/buttons/1.5.6/js/dataTables.buttons.min.js"></script>
     <script src="https://cdn.datatables.net/buttons/1.5.6/js/buttons.flash.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
@@ -89,12 +89,12 @@
     <script src="https://cdn.datatables.net/buttons/1.5.6/js/buttons.html5.min.js"></script>
     <script src="https://cdn.datatables.net/buttons/1.5.6/js/buttons.print.min.js"></script>
           <!-- Page level plugins -->
-    <script src="assets-admin/vendor/chart.js/Chart.min.js"></script>
+    <script src="assets/vendor/chart.js/Chart.min.js"></script>
 
     <!-- Page level custom scripts -->
-    <script src="assets-admin/js/demo/chart-area-demo.js"></script>
-    <script src="assets-admin/js/demo/chart-pie-demo.js"></script>
-    <script src="assets-admin/js/demo/chart-bar-demo.js"></script>
+    <script src="assets/js/demo/chart-area-demo.js"></script>
+    <script src="assets/js/demo/chart-pie-demo.js"></script>
+    <script src="assets/js/demo/chart-bar-demo.js"></script>
     <script type="text/javascript">
         $(document).ready(function() {
             let tgl_acara = $('#acara_id option:selected').attr('tanggal_acara');
