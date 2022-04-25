@@ -90,7 +90,7 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-7 site-section-heading text-center pt-4">
-                    <h2>Newest</h2>
+                    <h2>New Information</h2>
                 </div>
             </div>
             <div class="row">
@@ -105,10 +105,6 @@
                                 </figure>
                                 <div class="block-4-text p-4">
                                     <h3><a href="<?= $data['url_desc'] ?>"><?= $data['judul'] ?></a></h3>
-                                    <p class="text-primary font-weight-bold"><?= $data['desc'] ?></p>
-                                    <div class="site-logo">
-                                        <a href="<?= $data['url_beli'] ?>" class="js-logo-clone">Beli</a>
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -118,116 +114,11 @@
                         <div class="item">
                             <div class="block-4 text-center">
                                 <figure class="block-4-image">
-                                    <img src="<?php echo base_url() ?>assets/images/iphone_se.jpg"
-                                        alt="Image placeholder" class="img-fluid">
-                                </figure>
-                                <div class="block-4-text p-4">
-                                    <h3><a href="<?= $data['url_desc'] ?>"><?= $data['judul'] ?></a></h3>
-                                    <p class="text-primary font-weight-bold"><?= $data['desc'] ?></p>
-                                    <p class="text-primary font-weight"><?= $data['sub_desc'] ?></p>
-                                </div>
-                            </div>
-                        </div>
-                        <?php endforeach; ?>
-
-                        <?php foreach ($list3 as $data) : ?>
-                        <div class="item">
-                            <div class="block-4 text-center">
-                                <figure class="block-4-image">
-                                    <img src="<?php echo base_url() ?>assets/images/iphone_13.jpg"
-                                        alt="Image placeholder" class="img-fluid">
-                                </figure>
-                                <div class="block-4-text p-4">
-                                    <h3><a href="<?= $data['url_desc'] ?>"><?= $data['judul'] ?></a></h3>
-                                    <p class="text-primary font-weight-bold"><?= $data['desc'] ?></p>
-                                    <div class="site-logo">
-                                        <a href="<?= $data['url_beli'] ?>" class="js-logo-clone">Beli</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <?php endforeach; ?>
-
-                        <?php foreach ($list4 as $data) : ?>
-                        <div class="item">
-                            <div class="block-4 text-center">
-                                <figure class="block-4-image">
-                                    <img src="<?php echo base_url() ?>assets/images/studio_display.jpg"
-                                        alt="Image placeholder" class="img-fluid">
-                                </figure>
-                                <div class="block-4-text p-4">
-                                    <h3><a href="<?= $data['url_desc'] ?>"><?= $data['judul'] ?></a></h3>
-                                    <p class="text-primary font-weight-bold"><?= $data['desc'] ?></p>
-                                    <div class="site-logo">
-                                        <a href="<?= $data['url_beli'] ?>" class="js-logo-clone">Beli</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <?php endforeach; ?>
-
-                        <?php foreach ($list5 as $data) : ?>
-                        <div class="item">
-                            <div class="block-4 text-center">
-                                <figure class="block-4-image">
-                                    <img src="<?php echo base_url() ?>assets/images/watch.jpg"
-                                        alt="Image placeholder" class="img-fluid">
-                                </figure>
-                                <div class="block-4-text p-4">
-                                    <h3><a href="<?= $data['url_desc'] ?>"><?= $data['judul'] ?></a></h3>
-                                    <p class="text-primary font-weight-bold"><?= $data['desc'] ?></p>
-                                </div>
-                            </div>
-                        </div>
-                        <?php endforeach; ?>
-
-                        <?php foreach ($list6 as $data) : ?>
-                        <div class="item">
-                            <div class="block-4 text-center">
-                                <figure class="block-4-image">
-                                    <img src="<?php echo base_url() ?>assets/images/ipad.jpg" alt="Image placeholder"
-                                        class="img-fluid">
-                                </figure>
-                                <div class="block-4-text p-4">
-                                    <h3><a href="<?= $data['url_desc'] ?>"><?= $data['judul'] ?></a></h3>
-                                    <p class="text-primary font-weight-bold"><?= $data['desc'] ?></p>
-                                    <p class="text-primary font-weight"><?= $data['sub_desc'] ?></p>
-                                </div>
-                            </div>
-                        </div>
-                        <?php endforeach; ?>
-
-                        <?php foreach ($list7 as $data) : ?>
-                        <div class="item">
-                            <div class="block-4 text-center">
-                                <figure class="block-4-image">
-                                    <img src="<?php echo base_url() ?>assets/images/arcade.jpg" alt="Image placeholder"
-                                        class="img-fluid">
-                                </figure>
-                                <div class="block-4-text p-4">
-                                    <h3><a href="<?= $data['url_desc'] ?>"><?= $data['judul'] ?></a></h3>
-                                    <p class="text-primary font-weight-bold"><?= $data['desc'] ?></p>
-                                    <div class="site-logo">
-                                        <a href="<?= $data['url_beli'] ?>" class="js-logo-clone">Beli</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <?php endforeach; ?>
-
-                        <?php foreach ($list8 as $data) : ?>
-                        <div class="item">
-                            <div class="block-4 text-center">
-                                <figure class="block-4-image">
                                     <img src="<?php echo base_url() ?>assets/images/macbook_pro_14.jpg"
                                         alt="Image placeholder" class="img-fluid">
                                 </figure>
                                 <div class="block-4-text p-4">
                                     <h3><a href="<?= $data['url_desc'] ?>"><?= $data['judul'] ?></a></h3>
-                                    <p class="text-primary font-weight-bold"><?= $data['desc'] ?></p>
-                                    <div class="site-logo">
-                                        <a href="<?= $data['url_beli'] ?>" class="js-logo-clone">Beli</a>
-                                    </div>
                                 </div>
                             </div>
                         </div>
