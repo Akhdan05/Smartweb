@@ -4,14 +4,14 @@
             <div class="container">
                 <div class="row align-items-start align-items-md-center justify-content-end">
                     <div class="col-md-6 text-center text-md-left pt-5 pt-md-0">
-                        <h1 class="mb-2">Finding Your Dream Gadget</h1>
+                        <h1 class="mb-4">Finding Your Dream Gadget</h1>
                         <div class="intro-text text-center text-md-left">
-                            <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus at
+                            <!-- <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus at
                                 iaculis
                                 quam. Integer accumsan tincidunt fringilla. </p>
-                            <p>
-                                <a href="<?php echo base_url('index.php/Shop'); ?>" class="btn btn-sm btn-primary">Shop
-                                    Now</a>
+                            <p> -->
+                            <a href="<?php echo base_url('index.php/Shop'); ?>" class="btn btn-sm btn-primary">Shop
+                                Now</a>
                             </p>
                         </div>
                     </div>
@@ -29,8 +29,8 @@
                     </div>
                     <div class="text">
                         <h2 class="text-uppercase">Free Shipping</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus at iaculis quam. Integer
-                            accumsan tincidunt fringilla.</p>
+                        <p>You can enjoy free shipping throughout Indonesia at any time without
+                            any conditions and your order is guaranteed to arrive safely at home.</p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 d-lg-flex mb-4 mb-lg-0 pl-4" data-aos="fade-up" data-aos-delay="100">
@@ -39,8 +39,8 @@
                     </div>
                     <div class="text">
                         <h2 class="text-uppercase">Free Returns</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus at iaculis quam. Integer
-                            accumsan tincidunt fringilla.</p>
+                        <p>Gadgets are guaranteed to be 100% original. If you get a damaged
+                            gadget, you can exchange it with the applicable conditions.</p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 d-lg-flex mb-4 mb-lg-0 pl-4" data-aos="fade-up" data-aos-delay="200">
@@ -49,8 +49,7 @@
                     </div>
                     <div class="text">
                         <h2 class="text-uppercase">Customer Support</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus at iaculis quam. Integer
-                            accumsan tincidunt fringilla.</p>
+                        <p>Prioritizing customer safety and convenience in shopping.</p>
                     </div>
                 </div>
             </div>
@@ -145,12 +144,7 @@
                     </div>
                     <div class="col-md-12 col-lg-5 text-center pl-md-5">
                         <h2><a href="#">50% less in all items</a></h2>
-                        <p class="post-meta mb-4">By <a href="#">Carl Smith</a> <span
-                                class="block-8-sep">&bullet;</span>
-                            September 3, 2018</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam iste dolor accusantium
-                            facere
-                            corporis ipsum animi deleniti fugiat. Ex, veniam?</p>
+                        <p>Special price on this independence day, buy the gadget immediately before it sold out!!!</p>
                         <p><a href="<?php echo site_url('Shop/index'); ?>" class="btn btn-primary btn-sm">Shop Now</a>
                         </p>
                     </div>
@@ -173,12 +167,12 @@
                     <div class="site-section-heading pt-3 mb-4">
                         <h2 class="text-black">How We Started</h2>
                     </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius repellat, dicta at laboriosam,
-                        nemo exercitationem itaque eveniet architecto cumque, deleniti commodi molestias repellendus
-                        quos sequi hic fugiat asperiores illum. Atque, in, fuga excepturi corrupti error corporis
-                        aliquam unde nostrum quas.</p>
-                    <p>Accusantium dolor ratione maiores est deleniti nihil? Dignissimos est, sunt nulla illum autem in,
-                        quibusdam cumque recusandae, laudantium minima repellendus.</p>
+                    <p>ngeApple dibangun pada tahun 2021 yang merupakan sebuah startup yang bergerak di bidang jual beli
+                        gadget khususnya iPhone dan
+                        MacBook dengan mengutamakan
+                        kepuasan pelanggan saat berbelanja. Kami berusaha memberikan barang yang berkualitas dengan
+                        harga yang cukup miring.</p>
+                    <p>.</p>
                 </div>
             </div>
         </div>
