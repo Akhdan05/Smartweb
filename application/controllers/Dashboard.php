@@ -8,7 +8,7 @@ class dashboard extends CI_Controller
     {
         $this->read();
     }
-
+ 
     public function read() {
 
         $html_iphone = file_get_contents("https://www.apple.com/id/iphone/");
